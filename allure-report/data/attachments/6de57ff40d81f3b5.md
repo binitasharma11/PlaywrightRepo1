@@ -1,0 +1,850 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Screenshot_VisualComparision.spec.js >> Visual validation
+- Location: tests\Screenshot_VisualComparision.spec.js:13:6
+
+# Error details
+
+```
+Error: A snapshot doesn't exist at C:\PlayWrightAutomation\tests\Screenshot_VisualComparision.spec.js-snapshots\landing-win32.png, writing actual.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic:
+    - generic [ref=e2]:
+      - link "Home link" [ref=e3] [cursor=pointer]:
+        - /url: https://www.w3schools.com
+        - generic [ref=e4]: 
+      - navigation [ref=e5]:
+        - button "Tutorials" [ref=e6] [cursor=pointer]:
+          - text: Tutorials
+          - generic [ref=e7]: 
+          - text: 
+        - button "References" [ref=e8] [cursor=pointer]:
+          - text: References
+          - generic [ref=e9]: 
+          - text: 
+        - button "Exercises" [ref=e10] [cursor=pointer]:
+          - text: Exercises
+          - generic [ref=e11]: 
+          - text: 
+        - button "Certificates" [ref=e12] [cursor=pointer]:
+          - text: Certificates
+          - generic [ref=e13]: 
+          - text: 
+      - text:  
+      - generic [ref=e15]:
+        - generic [ref=e16]: Search field
+        - textbox "Search field" [ref=e17]:
+          - /placeholder: Search...
+        - button "Button to search" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+      - button "All our services" [ref=e22] [cursor=pointer]:
+        - img [ref=e23]
+      - generic [ref=e25]:
+        - button "Sign in to your account" [ref=e26] [cursor=pointer]: Sign In
+        - link "W3Schools Certificates" [ref=e27] [cursor=pointer]:
+          - /url: https://campus.w3schools.com/collections/course-catalog
+          - text: Get Certified
+        - link "Become a PLUS user and unlock powerful features" [ref=e28] [cursor=pointer]:
+          - /url: https://order.w3schools.com/plans
+          - text: Upgrade
+        - link "Contact us about W3Schools Academy for educational institutions" [ref=e29] [cursor=pointer]:
+          - /url: /academy/index.php
+          - text: Teachers
+        - link "Get Your Own Website With W3Schools Spaces" [ref=e30] [cursor=pointer]:
+          - /url: /spaces/index.php
+          - text: Spaces
+        - link "W3Schools Bootcamps" [ref=e31] [cursor=pointer]:
+          - /url: /bootcamp/index.php
+          - text: Bootcamps
+    - text:      
+    - generic:
+      - generic: Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate Certificate 
+  - generic [ref=e35]:
+    - generic [ref=e36] [cursor=pointer]: ❯
+    - generic:
+      - generic: 
+    - link "HTML" [ref=e37]:
+      - /url: /html/default.asp
+    - link "CSS" [ref=e38]:
+      - /url: /css/default.asp
+    - link "JAVASCRIPT" [ref=e39]:
+      - /url: /js/default.asp
+    - link "SQL" [ref=e40]:
+      - /url: /sql/default.asp
+    - link "PYTHON" [ref=e41]:
+      - /url: /python/default.asp
+    - link "JAVA" [ref=e42]:
+      - /url: /java/default.asp
+    - link "PHP" [ref=e43]:
+      - /url: /php/default.asp
+    - link "HOW TO" [ref=e44]:
+      - /url: /howto/default.asp
+    - link "W3.CSS" [ref=e45]:
+      - /url: /w3css/default.asp
+    - link "C" [ref=e46]:
+      - /url: /c/index.php
+    - link "C++" [ref=e47]:
+      - /url: /cpp/default.asp
+    - link "C#" [ref=e48]:
+      - /url: /cs/index.php
+    - link "BOOTSTRAP" [ref=e49]:
+      - /url: /bootstrap/bootstrap_ver.asp
+    - link "REACT" [ref=e50]:
+      - /url: /react/default.asp
+    - link "MYSQL" [ref=e51]:
+      - /url: /mysql/default.asp
+    - link "JQUERY" [ref=e52]:
+      - /url: /jquery/default.asp
+    - link "EXCEL" [ref=e53]:
+      - /url: /excel/index.php
+    - link "XML" [ref=e54]:
+      - /url: /xml/default.asp
+    - link "DJANGO" [ref=e55]:
+      - /url: /django/index.php
+    - link "NUMPY" [ref=e56]:
+      - /url: /python/numpy/default.asp
+    - link "PANDAS" [ref=e57]:
+      - /url: /python/pandas/default.asp
+    - link "NODEJS" [ref=e58]:
+      - /url: /nodejs/default.asp
+    - link "DSA" [ref=e59]:
+      - /url: /dsa/index.php
+    - link "TYPESCRIPT" [ref=e60]:
+      - /url: /typescript/index.php
+    - link "ANGULAR" [ref=e61]:
+      - /url: /angular/default.asp
+    - link "ANGULARJS" [ref=e62]:
+      - /url: /angularjs/default.asp
+    - link "GIT" [ref=e63]:
+      - /url: /git/default.asp
+    - link "POSTGRESQL" [ref=e64]:
+      - /url: /postgresql/index.php
+    - link "MONGODB" [ref=e65]:
+      - /url: /mongodb/index.php
+    - link "ASP" [ref=e66]:
+      - /url: /asp/default.asp
+    - link "AI" [ref=e67]:
+      - /url: /ai/default.asp
+    - link "R" [ref=e68]:
+      - /url: /r/default.asp
+    - link "GO" [ref=e69]:
+      - /url: /go/index.php
+    - link "KOTLIN" [ref=e70]:
+      - /url: /kotlin/index.php
+    - link "SWIFT" [ref=e71]:
+      - /url: /swift/default.asp
+    - link "SASS" [ref=e72]:
+      - /url: /sass/default.asp
+    - link "VUE" [ref=e73]:
+      - /url: /vue/index.php
+    - link "GEN AI" [ref=e74]:
+      - /url: /gen_ai/index.php
+    - link "SCIPY" [ref=e75]:
+      - /url: /python/scipy/index.php
+    - link "AWS" [ref=e76]:
+      - /url: /aws/index.php
+    - link "CYBERSECURITY" [ref=e77]:
+      - /url: /cybersecurity/index.php
+    - link "DATA SCIENCE" [ref=e78]:
+      - /url: /datascience/default.asp
+    - link "INTRO TO PROGRAMMING" [ref=e79]:
+      - /url: /programming/index.php
+    - link "INTRO TO HTML & CSS" [ref=e80]:
+      - /url: /htmlcss/default.asp
+    - link "BASH" [ref=e81]:
+      - /url: /bash/index.php
+    - link "RUST" [ref=e82]:
+      - /url: /rust/index.php
+    - link "TOOLS" [ref=e83]:
+      - /url: /tools/index.php
+  - generic [ref=e88]:
+    - generic [ref=e90]:
+      - heading "Learn to Code" [level=1] [ref=e91]
+      - heading "With the world's largest web developer site." [level=3] [ref=e92]:  With the world's largest web developer site.
+      - generic [ref=e93]:
+        - textbox "Search our tutorials" [ref=e94]:
+          - /placeholder: Search our tutorials, e.g. HTML
+        - button "" [ref=e95] [cursor=pointer]:
+          - generic "Search our tutorials" [ref=e96]: 
+      - heading "Not Sure Where To Begin?" [level=4] [ref=e97]:
+        - link "Not Sure Where To Begin?" [ref=e98]:
+          - /url: where_to_start.asp
+    - img [ref=e99]
+    - generic [ref=e101]:
+      - generic:
+        - generic [ref=e102]:
+          - heading "HTML" [level=1] [ref=e103]
+          - paragraph [ref=e104]: The language for building web pages
+          - link "Learn HTML" [ref=e105] [cursor=pointer]:
+            - /url: /html/default.asp
+          - link "Video Tutorial" [ref=e106] [cursor=pointer]:
+            - /url: https://www.w3schools.com/videos/index.php
+          - link "HTML Reference" [ref=e107] [cursor=pointer]:
+            - /url: /tags/default.asp
+          - link "Get Certified" [ref=e108] [cursor=pointer]:
+            - /url: https://campus.w3schools.com/collections/certifications/products/html-certificate
+        - generic [ref=e110]:
+          - heading "HTML Example:" [level=3] [ref=e111]
+          - generic [ref=e112]:
+            - text: <!DOCTYPE html>
+            - generic [ref=e113]: <html>
+            - generic [ref=e114]: <head>
+            - generic [ref=e115]: <title>
+            - text: HTML Tutorial
+            - generic [ref=e116]: </title>
+            - generic [ref=e117]: </head>
+            - generic [ref=e118]: <body>
+            - generic [ref=e119]: <h1>
+            - text: This is a heading
+            - generic [ref=e120]: </h1>
+            - generic [ref=e121]: <p>
+            - text: This is a paragraph.
+            - generic [ref=e122]: </p>
+            - generic [ref=e123]: </body>
+            - generic [ref=e124]: </html>
+          - link "Try it Yourself" [ref=e125] [cursor=pointer]:
+            - /url: /html/tryit.asp?filename=tryhtml_default_default
+    - generic [ref=e126]:
+      - generic:
+        - generic [ref=e127]:
+          - heading "CSS" [level=1] [ref=e128]
+          - paragraph [ref=e129]: The language for styling web pages
+          - link "Learn CSS" [ref=e130] [cursor=pointer]:
+            - /url: /css/default.asp
+          - link "CSS Reference" [ref=e131] [cursor=pointer]:
+            - /url: /cssref/index.php
+          - link "Get Certified" [ref=e132] [cursor=pointer]:
+            - /url: https://campus.w3schools.com/collections/certifications/products/css-certificate
+        - generic [ref=e134]:
+          - heading "CSS Example:" [level=3] [ref=e135]
+          - generic [ref=e137]:
+            - text: "body {"
+            - generic [ref=e138]:
+              - text: background-color
+              - generic [ref=e139]: ": lightblue;"
+            - text: "}"
+            - text: "h1 {"
+            - generic [ref=e140]:
+              - text: color
+              - generic [ref=e141]: ": white;"
+              - text: text-align
+              - generic [ref=e142]: ": center;"
+            - text: "}"
+            - text: "p {"
+            - generic [ref=e143]:
+              - text: font-family
+              - generic [ref=e144]: ": verdana;"
+            - text: "}"
+          - link "Try it Yourself" [ref=e145] [cursor=pointer]:
+            - /url: /css/tryit.asp?filename=trycss_default
+    - generic [ref=e146]:
+      - generic:
+        - generic [ref=e147]:
+          - heading "JavaScript" [level=1] [ref=e148]
+          - paragraph [ref=e149]: The language for programming web pages
+          - link "Learn JavaScript" [ref=e150] [cursor=pointer]:
+            - /url: /js/default.asp
+          - link "JavaScript Reference" [ref=e151] [cursor=pointer]:
+            - /url: /jsref/default.asp
+          - link "Get Certified" [ref=e152] [cursor=pointer]:
+            - /url: https://campus.w3schools.com/collections/certifications/products/javascript-certificate
+        - generic [ref=e154]:
+          - heading "JavaScript Example:" [level=3] [ref=e155]
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - text: <button
+              - generic [ref=e159]: onclick="myFunction()"
+              - text: ">"
+            - text: Click Me!
+            - generic [ref=e160]: </button>
+            - generic [ref=e161]: <script>
+            - generic [ref=e162]:
+              - text: "function myFunction() {"
+              - text: let x = document.getElementById("demo");
+              - text: x.style.fontSize = "25px";
+              - text: x.style.color = "red";
+              - text: "}"
+            - generic [ref=e163]: </script>
+          - link "Try it Yourself" [ref=e164] [cursor=pointer]:
+            - /url: /js/tryit.asp?filename=tryjs_default
+    - generic [ref=e165]:
+      - generic:
+        - generic [ref=e166]:
+          - heading "Python" [level=1] [ref=e167]
+          - paragraph [ref=e168]: A popular programming language
+          - link "Learn Python" [ref=e169] [cursor=pointer]:
+            - /url: /python/default.asp
+          - link "Python Reference" [ref=e170] [cursor=pointer]:
+            - /url: /python/python_reference.asp
+          - link "Get Certified" [ref=e171] [cursor=pointer]:
+            - /url: https://campus.w3schools.com/collections/certifications/products/python-certificate
+        - generic [ref=e173]:
+          - heading "Python Example:" [level=3] [ref=e174]
+          - generic [ref=e176]:
+            - text: "if 5 > 2:"
+            - text: print("Five is greater than two!")
+          - link "Try it Yourself" [ref=e177] [cursor=pointer]:
+            - /url: /python/trypython.asp?filename=demo_indentation
+    - generic [ref=e178]:
+      - generic:
+        - generic [ref=e179]:
+          - heading "SQL" [level=1] [ref=e180]
+          - paragraph [ref=e181]: A language for accessing databases
+          - link "Learn SQL" [ref=e182] [cursor=pointer]:
+            - /url: /sql/default.asp
+          - link "SQL Reference" [ref=e183] [cursor=pointer]:
+            - /url: /sql/sql_ref_keywords.asp
+          - link "Get Certified" [ref=e184] [cursor=pointer]:
+            - /url: https://campus.w3schools.com/collections/certifications/products/sql-certificate
+        - generic [ref=e186]:
+          - heading "SQL Example:" [level=3] [ref=e187]
+          - generic [ref=e189]:
+            - text: SELECT * FROM Customers
+            - text: WHERE Country='Mexico';
+          - link "Try it Yourself" [ref=e190] [cursor=pointer]:
+            - /url: /sql/trysql.asp?filename=trysql_select_where
+    - generic [ref=e191]:
+      - generic:
+        - generic [ref=e193]:
+          - heading "PHP" [level=2] [ref=e194]
+          - heading "A web server programming language" [level=5] [ref=e196]
+          - link "Learn PHP" [ref=e197] [cursor=pointer]:
+            - /url: /php/default.asp
+        - generic [ref=e199]:
+          - heading "jQuery" [level=2] [ref=e200]
+          - heading "A JS library for developing web pages" [level=5] [ref=e202]
+          - link "Learn jQuery" [ref=e203] [cursor=pointer]:
+            - /url: /jquery/default.asp
+        - generic [ref=e205]:
+          - heading "Java" [level=2] [ref=e206]
+          - heading "A programming language" [level=5] [ref=e208]
+          - link "Learn Java" [ref=e209] [cursor=pointer]:
+            - /url: /java/default.asp
+        - generic [ref=e211]:
+          - heading "C++" [level=2] [ref=e212]
+          - heading "A programming language" [level=5] [ref=e214]
+          - link "Learn C++" [ref=e215] [cursor=pointer]:
+            - /url: /cpp/default.asp
+        - generic [ref=e217]:
+          - heading "W3.CSS" [level=2] [ref=e218]
+          - heading "A CSS framework for faster and better responsive web pages" [level=5] [ref=e220]
+          - link "Learn W3.CSS" [ref=e221] [cursor=pointer]:
+            - /url: /w3css/default.asp
+        - generic [ref=e223]:
+          - heading "Bootstrap" [level=2] [ref=e224]
+          - heading "A CSS framework for designing better web pages" [level=5] [ref=e226]
+          - link "Learn Bootstrap" [ref=e227] [cursor=pointer]:
+            - /url: /bootstrap/bootstrap_ver.asp
+    - generic [ref=e228]:
+      - generic:
+        - link "C" [ref=e230]:
+          - /url: /c/index.php
+          - heading "C" [level=2] [ref=e232]
+        - link "C#" [ref=e234]:
+          - /url: /cs/index.php
+          - heading "C#" [level=2] [ref=e236]
+        - link "R" [ref=e238]:
+          - /url: /r/default.asp
+          - heading "R" [level=2] [ref=e240]
+        - link "Kotlin" [ref=e242]:
+          - /url: /kotlin/index.php
+          - heading "Kotlin" [level=2] [ref=e244]
+        - link "Node.js" [ref=e246]:
+          - /url: /nodejs/default.asp
+          - heading "Node.js" [level=2] [ref=e248]
+        - link "React" [ref=e250]:
+          - /url: /react/default.asp
+          - heading "React" [level=2] [ref=e252]
+        - link "JSON" [ref=e254]:
+          - /url: /js/js_json.asp
+          - heading "JSON" [level=2] [ref=e256]
+        - link "Vue" [ref=e258]:
+          - /url: /vue/index.php
+          - heading "Vue" [level=2] [ref=e260]
+        - link "MySQL" [ref=e262]:
+          - /url: /mysql/default.asp
+          - heading "MySQL" [level=2] [ref=e264]
+        - link "XML" [ref=e266]:
+          - /url: /xml/default.asp
+          - heading "XML" [level=2] [ref=e268]
+        - link "Sass" [ref=e270]:
+          - /url: /sass/default.asp
+          - heading "Sass" [level=2] [ref=e272]
+        - link "Icons" [ref=e274]:
+          - /url: /icons/default.asp
+          - heading "Icons" [level=2] [ref=e276]
+        - link "RWD" [ref=e278]:
+          - /url: /css/css_rwd_intro.asp
+          - heading "RWD" [level=2] [ref=e280]
+        - link "Graphics" [ref=e282]:
+          - /url: /graphics/default.asp
+          - heading "Graphics" [level=2] [ref=e284]
+        - link "SVG" [ref=e286]:
+          - /url: /graphics/svg_intro.asp
+          - heading "SVG" [level=2] [ref=e288]
+        - link "Canvas" [ref=e290]:
+          - /url: /graphics/canvas_intro.asp
+          - heading "Canvas" [level=2] [ref=e292]
+        - link "Raspberry Pi" [ref=e294]:
+          - /url: /nodejs/nodejs_raspberrypi.asp
+          - heading "Raspberry Pi" [level=2] [ref=e296]
+        - link "Cyber Security" [ref=e298]:
+          - /url: /cybersecurity/index.php
+          - heading "Cyber Security" [level=2] [ref=e300]
+        - link "Colors" [ref=e302]:
+          - /url: /colors/default.asp
+          - heading "Colors" [level=2] [ref=e304]
+        - link "Git" [ref=e306]:
+          - /url: /git/default.asp
+          - heading "Git" [level=2] [ref=e308]
+        - link "Matplotlib" [ref=e310]:
+          - /url: /python/matplotlib_intro.asp
+          - heading "Matplotlib" [level=2] [ref=e312]
+        - link "NumPy" [ref=e314]:
+          - /url: /python/numpy/default.asp
+          - heading "NumPy" [level=2] [ref=e316]
+        - link "Pandas" [ref=e318]:
+          - /url: /python/pandas/default.asp
+          - heading "Pandas" [level=2] [ref=e320]
+        - link "SciPy" [ref=e322]:
+          - /url: /python/scipy/index.php
+          - heading "SciPy" [level=2] [ref=e324]
+        - link "ASP" [ref=e326]:
+          - /url: /asp/default.asp
+          - heading "ASP" [level=2] [ref=e328]
+        - link "AngularJS" [ref=e330]:
+          - /url: /angularjs/default.asp
+          - heading "AngularJS" [level=2] [ref=e332]
+        - link "AppML" [ref=e334]:
+          - /url: /appml/default.asp
+          - heading "AppML" [level=2] [ref=e336]
+        - link "Go" [ref=e338]:
+          - /url: /go/index.php
+          - heading "Go" [level=2] [ref=e340]
+        - link "TypeScript" [ref=e342]:
+          - /url: /typescript/index.php
+          - heading "TypeScript" [level=2] [ref=e344]
+        - link "Django" [ref=e346]:
+          - /url: /django/index.php
+          - heading "Django" [level=2] [ref=e348]
+        - link "MongoDB" [ref=e350]:
+          - /url: /mongodb/index.php
+          - heading "MongoDB" [level=2] [ref=e352]
+        - link "Statistics" [ref=e354]:
+          - /url: /statistics/index.php
+          - heading "Statistics" [level=2] [ref=e356]
+        - link "Data Science" [ref=e358]:
+          - /url: /datascience/default.asp
+          - heading "Data Science" [level=2] [ref=e360]
+        - link "PostgreSQL" [ref=e362]:
+          - /url: /postgresql/index.php
+          - heading "PostgreSQL" [level=2] [ref=e364]
+        - link "HowTo" [ref=e366]:
+          - /url: /howto/default.asp
+          - heading "HowTo" [level=2] [ref=e368]
+        - link "Rust" [ref=e370]:
+          - /url: /rust/index.php
+          - heading "Rust" [level=2] [ref=e372]
+        - link "Spaces" [ref=e374]:
+          - /url: /spaces/index.php
+          - heading "Spaces" [level=2] [ref=e376]
+        - link "Typing Speed" [ref=e378]:
+          - /url: /typingspeed/default.asp
+          - heading "Typing Speed" [level=2] [ref=e380]
+        - link "Excel" [ref=e382]:
+          - /url: /excel/index.php
+          - heading "Excel" [level=2] [ref=e384]
+        - link "DSA - Data Structures and Algorithms" [ref=e386]:
+          - /url: /dsa/index.php
+          - heading "DSA - Data Structures and Algorithms" [level=2] [ref=e388]
+        - link "Machine Learning" [ref=e390]:
+          - /url: /python/python_ml_getting_started.asp
+          - heading "Machine Learning" [level=2] [ref=e392]
+        - link "Artificial Intelligence" [ref=e394]:
+          - /url: /ai/default.asp
+          - heading "Artificial Intelligence" [level=2] [ref=e396]
+        - link "Introduction to Programming" [ref=e398]:
+          - /url: /programming/index.php
+          - heading "Introduction to Programming" [level=2] [ref=e400]
+        - link "Bash" [ref=e402]:
+          - /url: /bash/index.php
+          - heading "Bash" [level=2] [ref=e404]
+        - link "Swift" [ref=e406]:
+          - /url: /swift/default.asp
+          - heading "Swift" [level=2] [ref=e408]
+        - link "Angular" [ref=e410]:
+          - /url: /angular/default.asp
+          - heading "Angular" [level=2] [ref=e412]
+    - generic [ref=e414]:
+      - heading "Log in / Sign Up" [level=1] [ref=e415]
+      - heading "Create an account to track your progress, get your own website, and get access to more features and learning materials:" [level=4] [ref=e416]:
+        - text: Create an account to track your progress, get your own website,
+        - text: "and get access to more features and learning materials:"
+      - generic:
+        - img "Log in"
+      - paragraph [ref=e417]:
+        - link "Sign Up" [ref=e418] [cursor=pointer]:
+          - /url: https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fwww.w3schools.com%2F
+    - generic [ref=e420]:
+      - heading "Code Editor" [level=1] [ref=e421]
+      - heading "With our online code editor, you can edit code and view the result in your browser" [level=4] [ref=e422]
+      - generic [ref=e423]:
+        - textbox "w3schools.com/tryit" [disabled] [ref=e430]: www.w3schools.com/tryit/
+        - generic [ref=e431]:
+          - button "Frontend" [ref=e432] [cursor=pointer]
+          - button "Backend" [ref=e433] [cursor=pointer]
+        - generic:
+          - generic:
+            - img "Frontend Code Editor"
+      - link "Try Frontend Editor (HTML/CSS/JS)" [ref=e434] [cursor=pointer]:
+        - /url: /tryit/tryit.asp?filename=tryhtml_hello
+      - link "Try Backend Editor (Python/PHP/Java/C..)" [ref=e435] [cursor=pointer]:
+        - /url: /tryit/trycompiler.asp?filename=demo_python
+    - generic [ref=e437]:
+      - heading "W3Schools Spaces" [level=1] [ref=e438]
+      - heading "If you want to create your own website, check out W3Schools Spaces." [level=3] [ref=e439]:
+        - text: If you want to create your own website, check out
+        - link "W3Schools Spaces" [ref=e440]:
+          - /url: /spaces/index.php
+        - text: .
+      - heading "No installation required - just open your browser and start coding:" [level=5] [ref=e441]
+      - img "Dynamic Spaces" [ref=e444]
+      - link "Learn More" [ref=e445] [cursor=pointer]:
+        - /url: /spaces/index.php
+    - generic [ref=e446]:
+      - heading "Become a Plus User" [level=1] [ref=e447]
+      - heading "And unlock powerful features:" [level=3] [ref=e448]
+      - list [ref=e450]:
+        - listitem [ref=e451]:
+          - img "Checkmark" [ref=e452]
+          - text: Browse W3Schools
+          - strong [ref=e453]: without ads
+        - listitem [ref=e454]:
+          - img "Checkmark" [ref=e455]
+          - text: Build and host Websites
+        - listitem [ref=e456]:
+          - img "Checkmark" [ref=e457]
+          - text: Unlimited challenges
+        - listitem [ref=e458]:
+          - img "Checkmark" [ref=e459]
+          - text: Unlimited practice tests
+        - listitem [ref=e460]:
+          - img "Checkmark" [ref=e461]
+          - text: Get extra credits
+        - listitem [ref=e462]:
+          - img "Checkmark" [ref=e463]
+          - text: Priority support
+      - link "Learn More" [ref=e464] [cursor=pointer]:
+        - /url: https://order.w3schools.com/plans
+    - separator [ref=e465]
+    - generic [ref=e466]:
+      - generic:
+        - generic [ref=e467]:
+          - heading "For Teachers" [level=1] [ref=e468]
+          - paragraph [ref=e469]: "Streamline your teaching:"
+          - list [ref=e471]:
+            - listitem [ref=e472]:
+              - img "Checkmark" [ref=e473]
+              - text: Manage your classroom
+            - listitem [ref=e474]:
+              - img "Checkmark" [ref=e475]
+              - text: Ready-to-use learning materials
+            - listitem [ref=e476]:
+              - img "Checkmark" [ref=e477]
+              - text: Customize study plans
+            - listitem [ref=e478]:
+              - img "Checkmark" [ref=e479]
+              - text: Track student progress
+            - listitem [ref=e480]:
+              - img "Checkmark" [ref=e481]
+              - text: Interactive coding challenges
+          - link "Learn More" [ref=e482] [cursor=pointer]:
+            - /url: /academy/index.php
+        - link "Classroom" [ref=e484]:
+          - /url: /academy/index.php
+          - generic [ref=e485]:
+            - img "Classroom"
+    - generic [ref=e487]:
+      - heading "Color Picker" [level=1] [ref=e488]
+      - heading "W3Schools' famous color picker:" [level=4] [ref=e489]
+      - link "Colorpicker" [ref=e490]:
+        - /url: /colors/colors_picker.asp
+        - img "Colorpicker" [ref=e492]
+    - generic [ref=e494]:
+      - heading "Code Game" [level=1] [ref=e495]
+      - heading "Help the Lynx collect pine cones!" [level=2] [ref=e496]
+      - link "Code Game":
+        - /url: /codegame/index.html
+        - generic:
+          - img "Code Game"
+      - paragraph [ref=e497]:
+        - link "Play Game" [ref=e498] [cursor=pointer]:
+          - /url: /codegame/index.html
+    - generic [ref=e499]:
+      - heading "Exercises and Quizzes" [level=2] [ref=e500]
+      - heading "Test your skills!" [level=4] [ref=e501]
+      - generic [ref=e502]:
+        - paragraph [ref=e504]:
+          - link "Exercises" [ref=e505] [cursor=pointer]:
+            - /url: /exercises/index.php
+        - paragraph [ref=e507]:
+          - link "Quizzes" [ref=e508] [cursor=pointer]:
+            - /url: /quiztest/default.asp
+    - generic [ref=e509]:
+      - heading "Web Templates" [level=1] [ref=e510]
+      - heading "Browse our selection of free responsive HTML Templates" [level=4] [ref=e511]:
+        - text: Browse our selection of
+        - strong [ref=e512]: free
+        - text: responsive HTML Templates
+      - link "W3.CSS Templates" [ref=e514]:
+        - /url: /w3css/w3css_templates.asp
+        - generic [ref=e515]:
+          - img "W3.CSS Templates"
+      - paragraph [ref=e516]:
+        - link "Browse Templates" [ref=e517] [cursor=pointer]:
+          - /url: /w3css/w3css_templates.asp
+    - generic [ref=e519]:
+      - heading "Kickstart your career" [level=2] [ref=e520]
+      - paragraph [ref=e521]: Get certified by completing a course
+      - link "Get started" [ref=e522] [cursor=pointer]:
+        - /url: https://campus.w3schools.com/collections/course-catalog
+      - img [ref=e523]
+      - img [ref=e526]:
+        - generic [ref=e528]: w
+        - generic [ref=e529]: "3"
+        - generic [ref=e530]: s
+        - generic [ref=e531]: c
+        - generic [ref=e532]: h
+        - generic [ref=e533]: o
+        - generic [ref=e534]: o
+        - generic [ref=e535]: l
+        - generic [ref=e536]: s
+        - generic [ref=e537]: C
+        - generic [ref=e538]: E
+        - generic [ref=e539]: R
+        - generic [ref=e540]: T
+        - generic [ref=e541]: I
+        - generic [ref=e542]: F
+        - generic [ref=e543]: I
+        - generic [ref=e544]: E
+        - generic [ref=e545]: D
+        - generic [ref=e546]: .
+        - generic [ref=e547]: "2"
+        - generic [ref=e548]: "0"
+        - generic [ref=e549]: "2"
+        - generic [ref=e550]: "5"
+    - generic [ref=e553]:
+      - heading "How To Section" [level=2] [ref=e554]
+      - heading "Code snippets for HTML, CSS and JavaScript" [level=4] [ref=e555]
+      - heading "For example, how to create a slideshow:" [level=6] [ref=e556]
+      - generic [ref=e557]:
+        - textbox "Select template" [disabled] [ref=e564]: www.w3schools.com/howto/
+        - iframe [ref=e565]:
+          - generic [ref=f2e2]:
+            - generic [ref=f2e3]:
+              - generic [ref=f2e4]: 1 / 3
+              - img [ref=f2e5]
+              - generic [ref=f2e6]: Caption Text
+            - generic [ref=f2e7] [cursor=pointer]: ❮
+            - generic [ref=f2e8] [cursor=pointer]: ❯
+      - link "Learn How To" [ref=e567] [cursor=pointer]:
+        - /url: /howto/default.asp
+  - generic [ref=e571]:
+    - generic [ref=e572]:
+      - link "W3Schools.com" [ref=e574]:
+        - /url: //www.w3schools.com
+        - generic [ref=e575]: 
+      - link "PLUS" [ref=e577]:
+        - /url: https://order.w3schools.com/plans
+      - link "SPACES" [ref=e579]:
+        - /url: /spaces/index.php
+      - link "GET CERTIFIED" [ref=e581]:
+        - /url: https://campus.w3schools.com/collections/certifications
+      - link "FOR TEACHERS" [ref=e583]:
+        - /url: /academy/index.php
+      - link "BOOTCAMPS" [ref=e585]:
+        - /url: /bootcamp/index.php
+      - link "CONTACT US" [ref=e587]:
+        - /url: javascript:void(0);
+    - generic [ref=e588]:
+      - generic [ref=e589]:
+        - heading "Top Tutorials" [level=5] [ref=e590]
+        - link "HTML Tutorial" [ref=e591]:
+          - /url: /html/default.asp
+        - link "CSS Tutorial" [ref=e592]:
+          - /url: /css/default.asp
+        - link "JavaScript Tutorial" [ref=e593]:
+          - /url: /js/default.asp
+        - link "How To Tutorial" [ref=e594]:
+          - /url: /howto/default.asp
+        - link "SQL Tutorial" [ref=e595]:
+          - /url: /sql/default.asp
+        - link "Python Tutorial" [ref=e596]:
+          - /url: /python/default.asp
+        - link "W3.CSS Tutorial" [ref=e597]:
+          - /url: /w3css/default.asp
+        - link "Bootstrap Tutorial" [ref=e598]:
+          - /url: /bootstrap/bootstrap_ver.asp
+        - link "PHP Tutorial" [ref=e599]:
+          - /url: /php/default.asp
+        - link "Java Tutorial" [ref=e600]:
+          - /url: /java/default.asp
+        - link "C++ Tutorial" [ref=e601]:
+          - /url: /cpp/default.asp
+        - link "jQuery Tutorial" [ref=e602]:
+          - /url: /jquery/default.asp
+      - generic [ref=e603]:
+        - heading "Top References" [level=5] [ref=e604]
+        - link "HTML Reference" [ref=e605]:
+          - /url: /tags/default.asp
+        - link "CSS Reference" [ref=e606]:
+          - /url: /cssref/index.php
+        - link "JavaScript Reference" [ref=e607]:
+          - /url: /jsref/default.asp
+        - link "SQL Reference" [ref=e608]:
+          - /url: /sql/sql_ref_keywords.asp
+        - link "Python Reference" [ref=e609]:
+          - /url: /python/python_reference.asp
+        - link "W3.CSS Reference" [ref=e610]:
+          - /url: /w3css/w3css_references.asp
+        - link "Bootstrap Reference" [ref=e611]:
+          - /url: /bootstrap/bootstrap_ref_all_classes.asp
+        - link "PHP Reference" [ref=e612]:
+          - /url: /php/php_ref_overview.asp
+        - link "HTML Colors" [ref=e613]:
+          - /url: /colors/colors_names.asp
+        - link "Java Reference" [ref=e614]:
+          - /url: /java/java_ref_keywords.asp
+        - link "AngularJS Reference" [ref=e615]:
+          - /url: /angularjs/angularjs_ref_directives.asp
+        - link "jQuery Reference" [ref=e616]:
+          - /url: /jquery/jquery_ref_overview.asp
+      - generic [ref=e617]:
+        - heading "Top Examples" [level=5] [ref=e618]
+        - link "HTML Examples" [ref=e619]:
+          - /url: /html/html_examples.asp
+        - link "CSS Examples" [ref=e620]:
+          - /url: /css/css_examples.asp
+        - link "JavaScript Examples" [ref=e621]:
+          - /url: /js/js_examples.asp
+        - link "How To Examples" [ref=e622]:
+          - /url: /howto/default.asp
+        - link "SQL Examples" [ref=e623]:
+          - /url: /sql/sql_examples.asp
+        - link "Python Examples" [ref=e624]:
+          - /url: /python/python_examples.asp
+        - link "W3.CSS Examples" [ref=e625]:
+          - /url: /w3css/w3css_examples.asp
+        - link "Bootstrap Examples" [ref=e626]:
+          - /url: /bootstrap/bootstrap_examples.asp
+        - link "PHP Examples" [ref=e627]:
+          - /url: /php/php_examples.asp
+        - link "Java Examples" [ref=e628]:
+          - /url: /java/java_examples.asp
+        - link "XML Examples" [ref=e629]:
+          - /url: /xml/xml_examples.asp
+        - link "jQuery Examples" [ref=e630]:
+          - /url: /jquery/jquery_examples.asp
+      - generic [ref=e631]:
+        - link "Get Certified" [ref=e632]:
+          - /url: https://campus.w3schools.com/collections/course-catalog
+          - heading "Get Certified" [level=5] [ref=e633]
+        - link "HTML Certificate" [ref=e634]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/html-certificate
+        - link "CSS Certificate" [ref=e635]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/css-certificate
+        - link "JavaScript Certificate" [ref=e636]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/javascript-certificate
+        - link "Front End Certificate" [ref=e637]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/front-end-certificate
+        - link "SQL Certificate" [ref=e638]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/sql-certificate
+        - link "Python Certificate" [ref=e639]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/python-certificate
+        - link "PHP Certificate" [ref=e640]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/php-certificate
+        - link "jQuery Certificate" [ref=e641]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/jquery-certificate
+        - link "Java Certificate" [ref=e642]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/java-certificate
+        - link "C++ Certificate" [ref=e643]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/c-certificate
+        - link "C# Certificate" [ref=e644]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/c-certificate-1
+        - link "XML Certificate" [ref=e645]:
+          - /url: https://campus.w3schools.com/collections/certifications/products/xml-certificate
+    - generic [ref=e646]:
+      - link "" [ref=e647]:
+        - /url: https://www.youtube.com/@w3schools
+        - generic [ref=e648]: 
+      - link "" [ref=e649]:
+        - /url: https://www.linkedin.com/company/w3schools.com/
+        - generic [ref=e650]: 
+      - link "" [ref=e651]:
+        - /url: https://discord.com/invite/w3schools
+        - generic [ref=e652]: 
+      - link "" [ref=e653]:
+        - /url: https://www.facebook.com/w3schoolscom/
+        - generic [ref=e654]: 
+      - link "" [ref=e655]:
+        - /url: https://www.instagram.com/w3schools.com_official/
+        - generic [ref=e656]: 
+      - link "FORUM" [ref=e657]:
+        - /url: /forum/index.php
+      - link "ABOUT" [ref=e658]:
+        - /url: /about/default.asp
+      - link "ACADEMY" [ref=e659]:
+        - /url: /academy/index.php
+    - generic [ref=e660]:
+      - text: W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our
+      - link "terms of use" [ref=e661]:
+        - /url: /about/about_copyright.asp
+      - text: ", cookies and"
+      - link "privacy policy" [ref=e662]:
+        - /url: /about/about_privacy.asp
+      - text: .
+      - link "Copyright 1999-2026" [ref=e663]:
+        - /url: /about/about_copyright.asp
+      - text: by Refsnes Data. All Rights Reserved.
+      - link "W3Schools is Powered by W3.CSS" [ref=e664]:
+        - /url: //www.w3schools.com/w3css/default.asp
+      - text: .
+  - text: "-->"
+```
+
+# Test source
+
+```ts
+  1  | const{test,expect} = require('@playwright/test')
+  2  | 
+  3  | test('Capture Screenshot', async({page})=>
+  4  | {
+  5  |     await page.goto("https://rahulshettyacademy.com/AutomationPractice");
+  6  |     await expect (page.locator('#displayed-text')).toBeVisible();
+  7  |     await page.locator('#displayed-text').screenshot({path:'tests/Screenshots/LocatorSnap.png'}); //This will take the screenshot of one locator only.
+  8  |     await page.locator("#hide-textbox").click();
+  9  |     await page.screenshot({path:'tests/Screenshots/pageSnap.png'}); //This will take full pge screenshot
+  10 | 
+  11 | })
+  12 | 
+  13 | test.only('Visual validation', async({page})=>
+  14 | {
+  15 |     await page.goto("https://www.w3schools.com/");
+  16 |     await page.waitForLoadState('networkidle');
+  17 | 
+> 18 |     await expect(page).toHaveScreenshot('landing.png'); //This will fail for the 1st time as there will be no screenshots in the path, but later it will do a complete visual compaision. The folder is created automatically same as the file name to store the screenshots
+     |     ^ Error: A snapshot doesn't exist at C:\PlayWrightAutomation\tests\Screenshot_VisualComparision.spec.js-snapshots\landing-win32.png, writing actual.
+  19 | });
+  20 | 
+```

@@ -1,0 +1,2030 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: amazon\womenShop.spec.js >> Amazon account page
+- Location: tests\amazon\womenShop.spec.js:7:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('li .hmenu-item').nth(1)
+    - locator resolved to <a class="hmenu-item" href="/gp/new-releases/?ref_=nav_em_cs_newreleases_0_1_1_3">New Releases</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is not visible
+  - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    30 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - heading [level=2] [ref=e4]: Skip to
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link [ref=e7]:
+            - /url: "#skippedLink"
+            - text: Main content
+      - separator [ref=e8]
+      - heading [level=2] [ref=e9]: Keyboard shortcuts
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - link [ref=e12]:
+            - /url: javascript:void(0)
+            - generic [ref=e13]:
+              - generic [ref=e14]: Search
+              - generic [ref=e15]:
+                - generic [ref=e16]: opt
+                - generic [ref=e17]: +
+                - generic [ref=e18]: /
+        - listitem [ref=e19]:
+          - link [ref=e20]:
+            - /url: javascript:void(0)
+            - generic [ref=e21]:
+              - generic [ref=e22]: Cart
+              - generic [ref=e23]:
+                - generic [ref=e24]: shift
+                - generic [ref=e25]: +
+                - generic [ref=e26]: opt
+                - generic [ref=e27]: +
+                - generic [ref=e28]: C
+        - listitem [ref=e29]:
+          - link [ref=e30]:
+            - /url: javascript:void(0)
+            - generic [ref=e31]:
+              - generic [ref=e32]: Home
+              - generic [ref=e33]:
+                - generic [ref=e34]: shift
+                - generic [ref=e35]: +
+                - generic [ref=e36]: opt
+                - generic [ref=e37]: +
+                - generic [ref=e38]: H
+        - listitem [ref=e39]:
+          - link [ref=e40]:
+            - /url: javascript:void(0)
+            - generic [ref=e41]:
+              - generic [ref=e42]: Orders
+              - generic [ref=e43]:
+                - generic [ref=e44]: shift
+                - generic [ref=e45]: +
+                - generic [ref=e46]: opt
+                - generic [ref=e47]: +
+                - generic [ref=e48]: O
+        - listitem [ref=e49]:
+          - button [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]:
+              - generic [ref=e52]: Show/Hide shortcuts
+              - generic [ref=e53]:
+                - generic [ref=e54]: shift
+                - generic [ref=e55]: +
+                - generic [ref=e56]: opt
+                - generic [ref=e57]: +
+                - generic [ref=e58]: Z
+      - generic [ref=e64]: To move between items, use your keyboard's up or down arrows.
+    - banner [ref=e65]:
+      - navigation [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - link [ref=e70] [cursor=pointer]:
+              - /url: /ref=nav_logo
+            - button [ref=e73] [cursor=pointer]:
+              - generic [ref=e75]:
+                - generic [ref=e76]: Delivering to Katy 77494
+                - generic [ref=e77]: Update location
+          - search [ref=e80]:
+            - generic [ref=e83]:
+              - generic [ref=e85]: All
+              - combobox [ref=e87] [cursor=pointer]
+            - searchbox [ref=e90]
+            - button [ref=e94] [cursor=pointer]: Go
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - link [ref=e98] [cursor=pointer]:
+                - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+                - generic [ref=e101]:
+                  - img [ref=e102]
+                  - generic [ref=e103]: EN
+              - button [ref=e104] [cursor=pointer]
+            - generic [ref=e105]:
+              - link [ref=e106] [cursor=pointer]:
+                - /url: https://www.amazon.com/gp/css/homepage.html?ref_=nav_youraccount_btn
+                - generic [ref=e108]: Hello, Bini
+                - generic [ref=e109]: Account & Lists
+              - button [ref=e110] [cursor=pointer]
+            - link [ref=e111] [cursor=pointer]:
+              - /url: /gp/css/order-history?ref_=nav_orders_first
+              - generic [ref=e112]: Returns
+              - generic [ref=e113]: "& Orders"
+            - link [ref=e114] [cursor=pointer]:
+              - /url: /gp/cart/view.html?ref_=nav_cart
+              - generic [ref=e116]: "0"
+              - generic [ref=e119]: Cart
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - button [expanded] [ref=e122]:
+              - generic [ref=e124]: All
+            - button [ref=e125] [cursor=pointer]
+            - button [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]: Join Prime
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - link [ref=e135] [cursor=pointer]:
+                - /url: /primebigdealdays?ref_=nav_cs_td_pbdd_dt_cr
+                - text: Early Prime Deals
+            - listitem [ref=e136]:
+              - link [ref=e138] [cursor=pointer]:
+                - /url: /gp/video/storefront?ref_=nav_cs_prime_video
+                - text: Prime Video
+            - listitem [ref=e139]:
+              - link [ref=e141] [cursor=pointer]:
+                - /url: /gp/buyagain?ie=UTF8&ref_=nav_cs_buy_again
+                - text: Buy Again
+            - listitem [ref=e142]:
+              - generic [ref=e143]:
+                - link [ref=e144] [cursor=pointer]:
+                  - /url: /fmc/learn-more?ref_=nav_cs_groceries
+                  - text: Groceries
+                - button [ref=e145] [cursor=pointer]
+            - listitem [ref=e146]:
+              - link [ref=e148] [cursor=pointer]:
+                - /url: /coupons?ref_=nav_cs_coupons
+                - text: Coupons
+            - listitem [ref=e149]:
+              - link [ref=e151] [cursor=pointer]:
+                - /url: https://pharmacy.amazon.com/?nodl=0&ref_=nav_cs_pharmacy
+                - text: Pharmacy
+            - listitem [ref=e152]:
+              - generic [ref=e153]:
+                - link [ref=e154] [cursor=pointer]:
+                  - /url: /home-garden-kitchen-furniture-bedding/b/?ie=UTF8&node=1055398&ref_=nav_cs_home
+                  - text: Amazon Home
+                - button [ref=e155] [cursor=pointer]
+            - listitem [ref=e156]:
+              - link [ref=e158] [cursor=pointer]:
+                - /url: /automotive-auto-truck-replacements-parts/b/?ie=UTF8&node=15684181&ref_=nav_cs_automotive
+                - text: Automotive
+            - listitem [ref=e159]:
+              - link [ref=e161] [cursor=pointer]:
+                - /url: /gp/browse.html?node=16115931011&ref_=nav_cs_registry
+                - text: Registry
+            - listitem [ref=e162]:
+              - link [ref=e164] [cursor=pointer]:
+                - /url: /alm/storefront?almBrandId=VUZHIFdob2xlIEZvb2Rz&ref_=nav_cs_whole_foods
+                - text: Whole Foods
+            - listitem [ref=e165]:
+              - link [ref=e167] [cursor=pointer]:
+                - /url: /computer-video-games-hardware-accessories/b/?ie=UTF8&node=468642&ref_=nav_cs_video_games
+                - text: Video Games
+            - listitem [ref=e168]:
+              - link [ref=e170] [cursor=pointer]:
+                - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=18145289011&ref_=nav_cs_audible
+                - text: Audible
+            - listitem [ref=e171]:
+              - generic [ref=e172]:
+                - link [ref=e173] [cursor=pointer]:
+                  - /url: /music/player?ref_=nav_cs_musicFlyout
+                  - text: Music
+                - button [ref=e174] [cursor=pointer]
+            - listitem [ref=e175]:
+              - link [ref=e177] [cursor=pointer]:
+                - /url: /baby-car-seats-strollers-bedding/b/?ie=UTF8&node=165796011&ref_=nav_cs_baby
+                - text: Baby
+            - listitem [ref=e178]:
+              - link [ref=e180] [cursor=pointer]:
+                - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+                - text: New Releases
+            - listitem [ref=e181]:
+              - link [ref=e183] [cursor=pointer]:
+                - /url: /hz/contact-us/foresight/hubgateway?ref_=nav_cs_fs_hybridhub_navbar_c
+                - text: Customer Service
+            - listitem [ref=e184]:
+              - link [ref=e186] [cursor=pointer]:
+                - /url: /amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=nav_cs_fashion
+                - text: Fashion
+            - listitem [ref=e187]:
+              - link [ref=e189] [cursor=pointer]:
+                - /url: /sports-outdoors/b/?ie=UTF8&node=3375251&ref_=nav_cs_sports
+                - text: Sports & Outdoors
+            - listitem [ref=e190]:
+              - link [ref=e192] [cursor=pointer]:
+                - /url: /gp/browse.html?node=73846268011&ref_=nav_cs_wwa
+                - text: Works with Alexa
+            - listitem [ref=e193]:
+              - generic [ref=e194]:
+                - link [ref=e195] [cursor=pointer]:
+                  - /url: /toys/b/?ie=UTF8&node=165793011&ref_=nav_cs_toys
+                  - text: Toys & Games
+                - button [ref=e196] [cursor=pointer]
+            - listitem [ref=e197]:
+              - link [ref=e199] [cursor=pointer]:
+                - /url: /Smart-Home/b/?ie=UTF8&node=6563140011&ref_=nav_cs_smart_home
+                - text: Smart Home
+            - listitem [ref=e200]:
+              - generic [ref=e201]:
+                - link [ref=e202] [cursor=pointer]:
+                  - /url: /Amazon-Custom/b/?ie=UTF8&node=11032013011&ref_=nav_cs_custom
+                  - text: Custom Products
+                - button [ref=e203] [cursor=pointer]
+            - listitem [ref=e204]:
+              - link [ref=e206] [cursor=pointer]:
+                - /url: /gcx/Gifts-for-Everyone/gfhz/?ref_=nav_cs_giftfinder
+                - text: Gift Shop
+            - listitem [ref=e207]:
+              - generic [ref=e208]:
+                - link [ref=e209] [cursor=pointer]:
+                  - /url: /gp/history?ref_=nav_cs_timeline
+                  - text: Browsing History
+                - button [ref=e210] [cursor=pointer]
+            - listitem [ref=e211]:
+              - link [ref=e213] [cursor=pointer]:
+                - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+                - text: Subscribe & Save
+            - listitem [ref=e214]:
+              - link [ref=e216] [cursor=pointer]:
+                - /url: /live?ref_=nav_cs_amazonlive
+                - text: Livestreams
+            - listitem [ref=e217]:
+              - link [ref=e219] [cursor=pointer]:
+                - /url: /haul/store?ref_=nav_cs_hul_disb
+                - text: Amazon Haul
+            - listitem [ref=e220]:
+              - link [ref=e222] [cursor=pointer]:
+                - /url: /fmc/ssd-storefront?gsc=fe16aGPfFs46S&ref_=nav_cs_SSD_nav_storefront
+                - text: Same-Day Delivery
+            - listitem [ref=e223]:
+              - link [ref=e225] [cursor=pointer]:
+                - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+                - text: Best Sellers
+            - listitem [ref=e226]:
+              - link [ref=e228] [cursor=pointer]:
+                - /url: /Kindle-eBooks/b/?ie=UTF8&node=154606011&ref_=nav_cs_kindle_books
+                - text: Kindle Books
+            - listitem [ref=e229]:
+              - link [ref=e231] [cursor=pointer]:
+                - /url: /books-used-books-textbooks/b/?ie=UTF8&node=283155&ref_=nav_cs_books
+                - text: Books
+            - listitem [ref=e232]:
+              - link [ref=e234] [cursor=pointer]:
+                - /url: /tvs/b/?ie=UTF8&node=172659&ref_=nav_cs_tv
+                - text: TV & Video
+            - listitem [ref=e235]:
+              - generic [ref=e236]:
+                - link [ref=e237] [cursor=pointer]:
+                  - /url: /gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc
+                  - text: Gift Cards
+                - button [ref=e238] [cursor=pointer]
+            - listitem [ref=e239]:
+              - link [ref=e241] [cursor=pointer]:
+                - /url: /luxurystores?ref_=nav_cs_luxury_disc
+                - text: Luxury
+            - listitem [ref=e242]:
+              - link [ref=e244] [cursor=pointer]:
+                - /url: /gp/browse.html?node=120955898011&ref_=nav_cs_handmade
+                - text: Handmade
+            - listitem [ref=e245]:
+              - link [ref=e247] [cursor=pointer]:
+                - /url: /hz/mobile/mission?ref_=nav_cs_ci_mcx_mi_d_db
+                - text: Keep Shopping For
+            - listitem [ref=e248]:
+              - link [ref=e250] [cursor=pointer]:
+                - /url: /computer-pc-hardware-accessories-add-ons/b/?ie=UTF8&node=541966&ref_=nav_cs_pc
+                - text: Computers
+            - listitem [ref=e251]:
+              - link [ref=e253] [cursor=pointer]:
+                - /url: /Beauty-Makeup-Skin-Hair-Products/b/?ie=UTF8&node=3760911&ref_=nav_cs_beauty
+                - text: Beauty & Personal Care
+            - listitem [ref=e254]:
+              - link [ref=e256] [cursor=pointer]:
+                - /url: /everyday-essentials?ref_=nav_cs_ee
+                - text: Everyday
+            - listitem [ref=e257]:
+              - link [ref=e259] [cursor=pointer]:
+                - /url: /health-personal-care-nutrition-fitness/b/?ie=UTF8&node=3760901&ref_=nav_cs_hpc
+                - text: Household, Health & Baby Care
+            - listitem [ref=e260]:
+              - link [ref=e262] [cursor=pointer]:
+                - /url: /Amazon_Basics?channel=discovbar&field-lbr_brands_browse-bin=AmazonBasics&ref_=nav_cs_amazonbasics
+                - text: Amazon Basics
+            - listitem [ref=e263]:
+              - link [ref=e265] [cursor=pointer]:
+                - /url: /Home-Audio-Electronics/b/?ie=UTF8&node=667846011&ref_=nav_cs_home_audio
+                - text: Home Audio & Theater
+            - listitem [ref=e266]:
+              - link [ref=e268] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell
+                - text: Sell
+            - listitem [ref=e269]:
+              - generic [ref=e270]:
+                - link [ref=e271] [cursor=pointer]:
+                  - /url: /pet-shops-dogs-cats-hamsters-kittens/b/?ie=UTF8&node=2619533011&ref_=nav_cs_pets
+                  - text: Pet Supplies
+                - button [ref=e272] [cursor=pointer]
+            - listitem [ref=e273]:
+              - generic [ref=e274]:
+                - link [ref=e275] [cursor=pointer]:
+                  - /url: /Tools-and-Home-Improvement/b/?ie=UTF8&node=228013&ref_=nav_cs_hi
+                  - text: Home Improvement
+                - button [ref=e276] [cursor=pointer]
+            - listitem [ref=e277]:
+              - link [ref=e279] [cursor=pointer]:
+                - /url: https://health.amazon.com/health-ai?ref_=nav_cs_health_ai
+                - text: Health AI
+            - listitem [ref=e280]:
+              - generic [ref=e281]:
+                - link [ref=e282] [cursor=pointer]:
+                  - /url: https://health.amazon.com/?ref_=nav_cs_medical_care_health_home
+                  - text: Medical Care
+                - button [ref=e283] [cursor=pointer]
+          - link [ref=e286]:
+            - /url: /primebigdealdays/?_encoding=UTF8&ref_=nav_swm_2026_Event_PBDD&pf_rd_p=bb353bc1-d565-4216-8408-12c7a8b85fe1&pf_rd_s=nav-sitewide-msg-text&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=BN1R1QGAHC3V8A4H1942
+            - text: Prime Big Deal Days is October 6-7
+    - main [ref=e288]:
+      - generic [ref=e290]:
+        - generic [ref=e295]:
+          - link [ref=e296]:
+            - /url: /prime/?_encoding=UTF8&pd_rd_w=P1xN6&content-id=amzn1.sym.57e15b50-0dbb-4610-b11c-3e09e71b9a82&pf_rd_p=57e15b50-0dbb-4610-b11c-3e09e71b9a82&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_unk
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Get free delivery on your faves
+                  - heading [level=3]:
+                    - generic:
+                      - generic: Fast shipping on millions of items
+              - button [ref=e297] [cursor=pointer]: Join Prime
+            - img [ref=e299]
+            - generic [ref=e300]: Terms apply.
+          - generic:
+            - generic: Terms apply.
+        - generic [ref=e301]:
+          - list [ref=e303]:
+            - listitem [ref=e304]:
+              - generic [ref=e310]:
+                - link [ref=e311]:
+                  - /url: /b/?_encoding=UTF8&_encoding=UTF8&node=207316900011&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22222019253011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&ref_=pd_hp_d_r_atf_prism_disc_d_newarrivals_fashion_prism_a&pd_rd_w=JWdUm&content-id=amzn1.sym.c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_p=c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3#dossier-asin-grid
+                  - generic [ref=e314]:
+                    - heading [level=3] [ref=e315]:
+                      - generic [ref=e317]: New Arrivals
+                    - generic [ref=e318]: Shop fall styles
+                - list [ref=e320]:
+                  - listitem [ref=e321]:
+                    - link [ref=e325]:
+                      - /url: /CIDER-Womens-Shoulder-Sweater-Straight/dp/B0H626ZGSF/?_encoding=UTF8&pd_rd_w=JWdUm&content-id=amzn1.sym.c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_p=c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_prism_disc_d_newarrivals_fashion_prism_a
+                      - img [ref=e328]
+                  - listitem [ref=e330]:
+                    - link [ref=e334]:
+                      - /url: /Wenrine-Womens-Sweater-Dresses-Bodycon/dp/B0GD4WX8B5/?_encoding=UTF8&pd_rd_w=JWdUm&content-id=amzn1.sym.c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_p=c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_prism_disc_d_newarrivals_fashion_prism_a
+                      - img [ref=e337]
+                  - listitem [ref=e339]:
+                    - link [ref=e343]:
+                      - /url: /Women-Sleeve-Sweater-Dress-Pleated/dp/B0H6F95B6B/?_encoding=UTF8&pd_rd_w=JWdUm&content-id=amzn1.sym.c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_p=c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_prism_disc_d_newarrivals_fashion_prism_a
+                      - img [ref=e346]
+                  - listitem [ref=e348]:
+                    - link [ref=e352]:
+                      - /url: /BLENCOT-Sweater-Sleeve-Floral-Embroidered/dp/B0H4LGQFSF/?_encoding=UTF8&pd_rd_w=JWdUm&content-id=amzn1.sym.c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_p=c87766a8-a67a-433b-8d3c-e585b90f1ef7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_prism_disc_d_newarrivals_fashion_prism_a
+                      - img [ref=e355]
+            - listitem [ref=e357]:
+              - generic [ref=e363]:
+                - link [ref=e364]:
+                  - /url: /b/?_encoding=UTF8&node=118268301011&pd_rd_w=8erRm&content-id=amzn1.sym.30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_p=30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_premium-c-v2-good-to-best-lifestyle-na-atf
+                  - heading [level=3] [ref=e368]:
+                    - generic [ref=e370]: Shop premium finds
+                - list [ref=e372]:
+                  - listitem [ref=e373]:
+                    - link [ref=e377]:
+                      - /url: /Osprey-Daylite-Crossbody-Tumbleweed-Yellow/dp/B0CN1HGPBF/?_encoding=UTF8&pd_rd_w=8erRm&content-id=amzn1.sym.30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_p=30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_premium-c-v2-good-to-best-lifestyle-na-atf
+                      - img [ref=e380]
+                  - listitem [ref=e382]:
+                    - link [ref=e386]:
+                      - /url: /Marc-Jacobs-Womens-Necklace-Silver/dp/B0GVKH6VFP/?_encoding=UTF8&pd_rd_w=8erRm&content-id=amzn1.sym.30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_p=30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_premium-c-v2-good-to-best-lifestyle-na-atf
+                      - img [ref=e389]
+                  - listitem [ref=e391]:
+                    - link [ref=e395]:
+                      - /url: /Kendra-Scott-Statement-Necklace-Vintage/dp/B0FRV4DWPT/?_encoding=UTF8&pd_rd_w=8erRm&content-id=amzn1.sym.30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_p=30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_premium-c-v2-good-to-best-lifestyle-na-atf
+                      - img [ref=e398]
+                  - listitem [ref=e400]:
+                    - link [ref=e404]:
+                      - /url: /KEEN-Womens-Zionic-Waterproof-Terrain/dp/B0BPVHRQ11/?_encoding=UTF8&pd_rd_w=8erRm&content-id=amzn1.sym.30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_p=30894ab8-a039-47c5-bf13-57075fa49cc5&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_premium-c-v2-good-to-best-lifestyle-na-atf
+                      - img [ref=e407]
+            - listitem [ref=e409]:
+              - generic [ref=e413]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]:
+                        - generic:
+                          - generic: The fall edit
+                      - generic: Shop premium brands
+                - generic [ref=e416]:
+                  - link [ref=e417]:
+                    - /url: /b/?_encoding=UTF8&_encoding=UTF8&node=215475797011&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&ref_=pd_hp_d_r_atf_unk&pd_rd_w=i2A7H&content-id=amzn1.sym.90cc948c-169f-4a43-b79c-a52ad5e530a2&pf_rd_p=90cc948c-169f-4a43-b79c-a52ad5e530a2&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3#dossier-asin-grid
+                  - region [ref=e419]:
+                    - button [ref=e422] [cursor=pointer]:
+                      - generic [ref=e423]: 
+                      - generic [ref=e424]: Play
+                    - text: 
+            - listitem [ref=e425]:
+              - link [ref=e430]:
+                - /url: /r/?_encoding=UTF8&aid=r53jVC4tQuiz6NlmvDIaDQ&dest=https%3A%2F%2Fpharmacy.amazon.com%3Fref_%3DCS_GWH_WD_MSO_Evergreen_Q3_September_Focus_on_your_health_2026-09-01&pd_rd_w=jYpRp&content-id=amzn1.sym.95564c16-7cc4-4cf3-8b5c-012fd070f1ba&pf_rd_p=95564c16-7cc4-4cf3-8b5c-012fd070f1ba&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_unk
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]:
+                        - generic:
+                          - generic: Focus on your health
+                      - generic: Get meds to your door
+                    - generic:
+                      - generic:
+                        - img
+                - img [ref=e432]
+            - listitem [ref=e433]:
+              - generic [ref=e437]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: New sportswear and more
+                      - heading [level=3]:
+                        - generic:
+                          - generic: Stay active with Nike
+                    - generic:
+                      - generic:
+                        - img
+                - generic [ref=e440]:
+                  - link [ref=e441]:
+                    - /url: /stores/page/E9C7C6A6-9A88-4959-A67F-4D44FC67320F/?_encoding=UTF8&_encoding=UTF8&ref_=pd_hp_d_r_atf_unk&pd_rd_w=MlmUa&content-id=amzn1.sym.2bc2ac0a-a6ef-495b-affe-7c74c93e6233&pf_rd_p=2bc2ac0a-a6ef-495b-affe-7c74c93e6233&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3
+                    - img [ref=e442]
+                  - region [ref=e444]:
+                    - button [ref=e448] [cursor=pointer]:
+                      - generic [ref=e449]: 
+                      - generic [ref=e450]: Play
+                    - text: 
+            - listitem [ref=e451]
+          - link [ref=e457]:
+            - /url: "#"
+        - generic [ref=e458]:
+          - list [ref=e460]:
+            - listitem [ref=e461]:
+              - generic [ref=e466]:
+                - link [ref=e467]:
+                  - /url: /EXLURA-Oversized-Sweater-Sleeveless-Pullover/dp/B0DCVT1C7S/?_encoding=UTF8&pd_rd_w=w9djO&content-id=amzn1.sym.627c31ca-3be2-4f28-b3a9-1be33b16f5a0&pf_rd_p=627c31ca-3be2-4f28-b3a9-1be33b16f5a0&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_sspa_mw_gateway&ie=UTF8&psc=1&spc=MTo1MDY1NTE1NDM0NjcwODc0OjE3OTAxOTcwMTc6c3BfYXRmX3dwX3Bob25lX2hvbWVwYWdlOjMwMTU0MDc3Njk5NTAwMjowOjA6Og==&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfd3BfcGhvbmVfaG9tZXBhZ2U=
+                  - heading [level=3] [ref=e469]:
+                    - generic [ref=e470]: For you
+                - button [ref=e477] [cursor=pointer]: Sponsored
+                - link [ref=e479]:
+                  - /url: /EXLURA-Oversized-Sweater-Sleeveless-Pullover/dp/B0DCVT1C7S/?_encoding=UTF8&pd_rd_w=w9djO&content-id=amzn1.sym.627c31ca-3be2-4f28-b3a9-1be33b16f5a0&pf_rd_p=627c31ca-3be2-4f28-b3a9-1be33b16f5a0&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_sspa_mw_gateway&ie=UTF8&psc=1&spc=MTo1MDY1NTE1NDM0NjcwODc0OjE3OTAxOTcwMTc6c3BfYXRmX3dwX3Bob25lX2hvbWVwYWdlOjMwMTU0MDc3Njk5NTAwMjowOjA6Og==&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfd3BfcGhvbmVfaG9tZXBhZ2U=
+                  - img [ref=e481]
+            - listitem [ref=e482]:
+              - generic [ref=e489]:
+                - link [ref=e490]:
+                  - /url: https://aax-events-cell01-cf.us-east.ono.axp.amazon-adsystem.com/x/c/RFb7wMembbGNn6m67cGUlgoAAAGg0A6r9QEAAAH0AUFvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICC5Xh_N/clv1c_ek-owfcyHeDCTbnFl0GOW3r-2Sg1-MKDOpwCSlpoI_KKZOdgFUxMuXNVJe9DR_8lhx4tUaxR04mm3NJpK_73fxZEAc0kikrWdNdo7PCCNFKaiLOK0smZFWMru1xV0eTzch1RwCaiZEFLp37A3Sw-toaP_0UVFRLvgcDq0wuJySVRa7k4nARbzVn8sWgnV9JX_JalEfq-repsRjzYUydOvvRGXtR0ayjKAN5e7ELE53OiL7GfdUkgTfVL59s9AFub3uoy9Qx-EICahEoLOQdoOFLHGotTbjTRqplrFv-tLUBr2QL333tD68ZwaniB6sw7lciSINdJFMwWmevkQh3frE2aO8MFTBKV-B7Uv_fmfbeTPZ3G84HCg3fqE13mKZWyXCnfdFRZXUdInz95xJX2P0GYurB0WipauOvfiPhNBNAUkDENQTQbx5tkXD5ASe1RysZ2i4dT-tWQOw7mIAPm5yL5_V25fVaLh4LTm_fyBnzfwAtbPaVP3U0_P44KPswEpvpWA6dAlVDClPozzNjHzXMg9NneVovzva8bw4xCeYACudzBXAmoFeiElEfm-PM6TN94VnhdyvQ2grBDvpfUVys3_49kIjNVe0f2Buss8yoQUUobzXHUQaMV6RRyPHDv6JWU6aPWiX1mUHER5vjhko12VdWkIjEXj2R-El7T73jUDJUL7UcVcw7U8p_AicqZfz_9_eD8P1IdwBmEcNom_r3Fv56rDqvpEkMNU9FEslnfinAjk3t120GpALRnWna_Pas8krGjE4iPYW90FlCR1jD71XkMbZ1NkGhzeK1ff9VAWO7p-Aze-t_WOP7hie97UjZufrYnGWcwQnto3kBbgw/https://www.amazon.com/dp/B0CQ2ZMXJT?aref=q6T0vqm7Vi&aaxitk=955b7d6e3f86e1042a186504e25d1483&language=en_US&pd_rd_plhdr=t&ref=dacx_dp_594027442156372929_589205473862385933
+                  - heading [level=3] [ref=e492]:
+                    - generic [ref=e493]: You might like
+                - button [ref=e500] [cursor=pointer]: Sponsored
+                - link [ref=e502]:
+                  - /url: https://aax-events-cell01-cf.us-east.ono.axp.amazon-adsystem.com/x/c/RFb7wMembbGNn6m67cGUlgoAAAGg0A6r9QEAAAH0AUFvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICC5Xh_N/clv1c_ek-owfcyHeDCTbnFl0GOW3r-2Sg1-MKDOpwCSlpoI_KKZOdgFUxMuXNVJe9DR_8lhx4tUaxR04mm3NJpK_73fxZEAc0kikrWdNdo7PCCNFKaiLOK0smZFWMru1xV0eTzch1RwCaiZEFLp37A3Sw-toaP_0UVFRLvgcDq0wuJySVRa7k4nARbzVn8sWgnV9JX_JalEfq-repsRjzYUydOvvRGXtR0ayjKAN5e7ELE53OiL7GfdUkgTfVL59s9AFub3uoy9Qx-EICahEoLOQdoOFLHGotTbjTRqplrFv-tLUBr2QL333tD68ZwaniB6sw7lciSINdJFMwWmevkQh3frE2aO8MFTBKV-B7Uv_fmfbeTPZ3G84HCg3fqE13mKZWyXCnfdFRZXUdInz95xJX2P0GYurB0WipauOvfiPhNBNAUkDENQTQbx5tkXD5ASe1RysZ2i4dT-tWQOw7mIAPm5yL5_V25fVaLh4LTm_fyBnzfwAtbPaVP3U0_P44KPswEpvpWA6dAlVDClPozzNjHzXMg9NneVovzva8bw4xCeYACudzBXAmoFeiElEfm-PM6TN94VnhdyvQ2grBDvpfUVys3_49kIjNVe0f2Buss8yoQUUobzXHUQaMV6RRyPHDv6JWU6aPWiX1mUHER5vjhko12VdWkIjEXj2R-El7T73jUDJUL7UcVcw7U8p_AicqZfz_9_eD8P1IdwBmEcNom_r3Fv56rDqvpEkMNU9FEslnfinAjk3t120GpALRnWna_Pas8krGjE4iPYW90FlCR1jD71XkMbZ1NkGhzeK1ff9VAWO7p-Aze-t_WOP7hie97UjZufrYnGWcwQnto3kBbgw/https://www.amazon.com/dp/B0CQ2ZMXJT?aref=q6T0vqm7Vi&aaxitk=955b7d6e3f86e1042a186504e25d1483&language=en_US&pd_rd_plhdr=t&ref=dacx_dp_594027442156372929_589205473862385933
+                  - img [ref=e504]
+            - listitem [ref=e505]:
+              - link [ref=e511]:
+                - /url: /Squishmallows-SQMK-Style-Number-SQCR08663/dp/B0DK7Z32CJ/?_encoding=UTF8&pd_rd_w=gsziJ&content-id=amzn1.sym.432c217e-af6d-478c-b89b-25a3f0108d3b&pf_rd_p=432c217e-af6d-478c-b89b-25a3f0108d3b&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_fabric-nonp-wp-sum26-apb-toys
+                - heading [level=3] [ref=e513]:
+                  - generic [ref=e514]: Discover this exclusive toy
+                - img [ref=e516]
+            - listitem [ref=e517]:
+              - link [ref=e523]:
+                - /url: /SEACRET-Minerals-Dead-Butter-Ocean/dp/B0078PEM1S/?_encoding=UTF8&pd_rd_w=DTrtg&content-id=amzn1.sym.b0b17ae1-7d65-4457-a87f-6800c46ed981&pf_rd_p=b0b17ae1-7d65-4457-a87f-6800c46ed981&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_fabric-nonp-wp-fall26-premium-edit
+                - heading [level=3] [ref=e525]:
+                  - generic [ref=e526]: Shop this premium find
+                - img [ref=e528]
+            - listitem [ref=e529]:
+              - link [ref=e535]:
+                - /url: /ZIKZAUDOU-Village-Octagon-Cottagecore-Landscape/dp/B0H4RQKB3R/?_encoding=UTF8&pd_rd_w=R4srB&content-id=amzn1.sym.9a0acee9-ff41-423a-a42a-6e8df76c2716&pf_rd_p=9a0acee9-ff41-423a-a42a-6e8df76c2716&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_fabric-nonp-wp-fall26-na-home
+                - heading [level=3] [ref=e537]:
+                  - generic [ref=e538]: Shop this new home arrival
+                - img [ref=e540]
+            - listitem [ref=e541]:
+              - link [ref=e547]:
+                - /url: /Amazon-Fire-TV-Stick-HD-Thin-and-Portable/dp/B0DJGDC3BD/?_encoding=UTF8&pd_rd_w=GouDH&content-id=amzn1.sym.8973b24b-444d-4bd2-8e7c-397db0ecf87e&pf_rd_p=8973b24b-444d-4bd2-8e7c-397db0ecf87e&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_ts_device
+                - heading [level=3] [ref=e549]:
+                  - generic [ref=e550]: Top-selling Amazon Device
+                - img [ref=e552]
+            - listitem [ref=e553]:
+              - link [ref=e559]:
+                - /url: /Naturium-Glow-Getter-Multi-Oil-Scrub/dp/B0GD8MNZVD/?_encoding=UTF8&pd_rd_w=1opTS&content-id=amzn1.sym.285e143d-158f-4632-883e-fcf1c9d5d730&pf_rd_p=285e143d-158f-4632-883e-fcf1c9d5d730&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_fabric-nonp-wp-fall26-co
+                - heading [level=3] [ref=e561]:
+                  - generic [ref=e562]: Shop this fall pick
+                - img [ref=e564]
+            - listitem [ref=e565]:
+              - link [ref=e571]:
+                - /url: /Cajun-Seasoning-Blend-Original-Ounce/dp/B000KRL002/?_encoding=UTF8&pd_rd_w=Wbgo2&content-id=amzn1.sym.153bd904-391b-4aa7-8fe3-ac1b05574ef6&pf_rd_p=153bd904-391b-4aa7-8fe3-ac1b05574ef6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=ps31a&pd_rd_r=8adfda29-ff55-4124-b8cf-304d48c4dba3&ref_=pd_hp_d_r_atf_fabric-nonp-wp-sum26-apb-toys
+                - heading [level=3] [ref=e573]:
+                  - generic [ref=e574]: Stock your pantry
+                - img [ref=e576]
+          - link [ref=e577]:
+            - /url: "#"
+      - generic [ref=e578]:
+        - generic [ref=e582]:
+          - heading [level=2] [ref=e583]: Recommended deals for you
+          - list [ref=e586]:
+            - listitem [ref=e587]:
+              - generic [ref=e590]:
+                - link [ref=e592]:
+                  - /url: /events/deals/?_encoding=UTF8&_encoding=UTF8&ref_=dealz_dotda_t1_see_more&bubble-id=deals-contextual-link&dynamicBubble=%7B%2522collectionId%2522%3A%2522deals-contextual-link%2522%2C%2522departmentsIncluded%2522%3A%5B1044456%2C1045024%2C2368343011%5D%7D&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+                  - heading [level=3] [ref=e594]:
+                    - generic [ref=e595]:
+                      - generic [ref=e596]: Deals for you
+                      - generic [ref=e597]: Deals for you
+                  - img [ref=e598]
+                - list [ref=e601]:
+                  - listitem [ref=e602]:
+                    - generic [ref=e605]:
+                      - link [ref=e607]:
+                        - /url: /Zeagoo-Sleeveless-Knitted-Sweater-Pockets/dp/B0D6MW5HT1/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - img [ref=e610]
+                      - link [ref=e613]:
+                        - /url: /Zeagoo-Sleeveless-Knitted-Sweater-Pockets/dp/B0D6MW5HT1/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - generic [ref=e614]: Zeagoo Women Sleeveless Knitted Dress Trendy 2026 Knit Sweater Vest Dress with Pockets Loose Swing Sweater Vests, Dark Grey L
+                        - generic [ref=e616]: 31% off Limited time deal
+                  - listitem [ref=e617]:
+                    - generic [ref=e620]:
+                      - link [ref=e622]:
+                        - /url: /ANRABESS-Lantern-Elastic-Dresses-Fashion/dp/B0DDC98PKW/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - img [ref=e625]
+                      - link [ref=e628]:
+                        - /url: /ANRABESS-Lantern-Elastic-Dresses-Fashion/dp/B0DDC98PKW/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - generic [ref=e629]: ANRABESS Women Long Lantern Sleeve Square Neck Fall Short Dress Deep Purple
+                        - generic [ref=e631]: 27% off Limited time deal
+                  - listitem [ref=e632]:
+                    - generic [ref=e635]:
+                      - link [ref=e637]:
+                        - /url: /PUMIEY-Sleeve-Shirts-Women-Medium/dp/B0CJ8N57HK/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - img [ref=e640]
+                      - link [ref=e643]:
+                        - /url: /PUMIEY-Sleeve-Shirts-Women-Medium/dp/B0CJ8N57HK/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - generic [ref=e644]: PUMIEY Long Sleeve Shirts for Women Mock Neck Slim Fit T Shirts Going Out Tops Basic Tee, Blush Medium
+                        - generic [ref=e646]: 12% off Limited time deal
+                  - listitem [ref=e647]:
+                    - generic [ref=e650]:
+                      - link [ref=e652]:
+                        - /url: /ANRABESS-Crewneck-Oversized-Pullover-412molv-S/dp/B09C5CNXQK/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - img [ref=e655]
+                      - link [ref=e658]:
+                        - /url: /ANRABESS-Crewneck-Oversized-Pullover-412molv-S/dp/B09C5CNXQK/?_encoding=UTF8&pd_rd_w=WX3pg&content-id=amzn1.sym.a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_p=a04a3bb4-aa00-4251-afd8-bccb3c159304&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_dotda_t1
+                        - generic [ref=e659]: ANRABESS Sweater Dress for Women Oversized Cable Knit Fall Long Sleeve
+                        - generic [ref=e661]: 20% off Limited time deal
+            - listitem [ref=e662]:
+              - generic [ref=e665]:
+                - link [ref=e667]:
+                  - /url: /events/deals/?_encoding=UTF8&_encoding=UTF8&ref_=dealz_m1_hw__t1_see_more&bubble-id=deals-contextual-link&dynamicBubble=%7B%2522collectionId%2522%3A%2522deals-contextual-link%2522%2C%2522departmentsIncluded%2522%3A%5B1045024%5D%7D&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+                  - heading [level=3] [ref=e669]:
+                    - generic [ref=e670]:
+                      - generic [ref=e671]: Inspired by your recent history
+                      - generic [ref=e672]: Inspired by your recent history
+                  - img [ref=e673]
+                - list [ref=e676]:
+                  - listitem [ref=e677]:
+                    - generic [ref=e680]:
+                      - generic [ref=e681]:
+                        - link [ref=e682]:
+                          - /url: /Urban-CoCo-Elastic-Length-Pencil/dp/B08YN2PCMD/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDozMDAwNDc0MzM2MDQ5MDI6MDowOjo=&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - img [ref=e685]
+                        - button [ref=e690] [cursor=pointer]: Sponsored
+                      - link [ref=e693]:
+                        - /url: /Urban-CoCo-Elastic-Length-Pencil/dp/B08YN2PCMD/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDozMDAwNDc0MzM2MDQ5MDI6MDowOjo=&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - generic [ref=e694]: Urban CoCo Women's High Waist Stretch Ribbed Knit Pencil Skirt Midi Length with Side Slit Office Work Bodycon Style Camel
+                        - generic [ref=e696]: 10% off Limited time deal
+                  - listitem [ref=e697]:
+                    - generic [ref=e700]:
+                      - link [ref=e702]:
+                        - /url: /Zeagoo-Sweater-Dresses-Pockets-Sleeveless/dp/B0FCMKK8HT/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZDTUtLOEhUOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - img [ref=e705]
+                      - link [ref=e708]:
+                        - /url: /Zeagoo-Sweater-Dresses-Pockets-Sleeveless/dp/B0FCMKK8HT/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZDTUtLOEhUOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - generic [ref=e709]: Zeagoo Womens Sweater Vest Dresses with Pockets V Neck Sleeveless Knitted Dress for Womens 2025 Loose A Line Sweater Dress Green XXL
+                        - generic [ref=e711]: 25% off Limited time deal
+                  - listitem [ref=e712]:
+                    - generic [ref=e715]:
+                      - link [ref=e717]:
+                        - /url: /ANRABESS-Lantern-Elastic-Dresses-Fashion/dp/B0DDC98PKW/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEREQzk4UEtXOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - img [ref=e720]
+                      - link [ref=e723]:
+                        - /url: /ANRABESS-Lantern-Elastic-Dresses-Fashion/dp/B0DDC98PKW/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEREQzk4UEtXOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - generic [ref=e724]: ANRABESS Women Long Lantern Sleeve Square Neck Fall Short Dress Deep Purple
+                        - generic [ref=e726]: 27% off Limited time deal
+                  - listitem [ref=e727]:
+                    - generic [ref=e730]:
+                      - link [ref=e732]:
+                        - /url: /ANRABESS-Crewneck-Oversized-Pullover-412molv-S/dp/B09C5CNXQK/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMDlDNUNOWFFLOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - img [ref=e735]
+                      - link [ref=e738]:
+                        - /url: /ANRABESS-Crewneck-Oversized-Pullover-412molv-S/dp/B09C5CNXQK/?_encoding=UTF8&pd_rd_w=Abjsl&content-id=amzn1.sym.8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_p=8ee537f9-bdd3-430e-91bf-d4f68de4a3fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_m1_hw_t1_hxwDSD_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToyNjg4MDU3MTY1OTQxOTYxOjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMDlDNUNOWFFLOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - generic [ref=e739]: ANRABESS Sweater Dress for Women Oversized Cable Knit Fall Long Sleeve
+                        - generic [ref=e741]: 20% off Limited time deal
+            - listitem [ref=e742]:
+              - generic [ref=e745]:
+                - link [ref=e747]:
+                  - /url: /events/deals/?_encoding=UTF8&_encoding=UTF8&ref_=dealz_ic_t1_see_more&bubble-id=deals-contextual-link&dynamicBubble=%7B%2522collectionId%2522%3A%2522deals-contextual-link%2522%2C%2522departmentsIncluded%2522%3A%5B2514609011%2C5417873011%2C1045024%5D%7D&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+                  - heading [level=3] [ref=e749]:
+                    - generic [ref=e750]:
+                      - generic [ref=e751]: Clothing, Shoes & Jewelry
+                      - generic [ref=e752]: Clothing, Shoes & Jewelry
+                  - img [ref=e753]
+                - list [ref=e756]:
+                  - listitem [ref=e757]:
+                    - generic [ref=e760]:
+                      - link [ref=e762]:
+                        - /url: /Tanming-Corduroy-Pinafore-Overall-Skirt%EF%BC%88Brown-L%EF%BC%89/dp/B088PPJ4BQ/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - img [ref=e765]
+                      - link [ref=e768]:
+                        - /url: /Tanming-Corduroy-Pinafore-Overall-Skirt%EF%BC%88Brown-L%EF%BC%89/dp/B088PPJ4BQ/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - generic [ref=e769]: Tanming Womens Corduroy Overall Dress Fall Suspender Skirt(Brown-L)
+                        - generic [ref=e771]: 15% off Limited time deal
+                  - listitem [ref=e772]:
+                    - generic [ref=e775]:
+                      - link [ref=e777]:
+                        - /url: /PRETTYGARDEN-Striped-Sweater-Pullover-Matching/dp/B0D8NYSVW6/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - img [ref=e780]
+                      - link [ref=e783]:
+                        - /url: /PRETTYGARDEN-Striped-Sweater-Pullover-Matching/dp/B0D8NYSVW6/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - generic [ref=e784]: PRETTYGARDEN Women's 2 Piece Striped Sweater Skirt Set Fall Matching Sets
+                        - generic [ref=e786]: 26% off Limited time deal
+                  - listitem [ref=e787]:
+                    - generic [ref=e790]:
+                      - link [ref=e792]:
+                        - /url: /Saodimallsu-Womens-Oversized-Sweater-Dresses/dp/B0FCG6FMXC/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - img [ref=e795]
+                      - link [ref=e798]:
+                        - /url: /Saodimallsu-Womens-Oversized-Sweater-Dresses/dp/B0FCG6FMXC/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - generic [ref=e799]: Saodimallsu Womens Oversized Sweater Dress Mock Neck Long Sleeve Casual Warm Chunky Knit Fall Winter Maxi Dresses Black
+                        - generic [ref=e801]: 28% off Limited time deal
+                  - listitem [ref=e802]:
+                    - generic [ref=e805]:
+                      - link [ref=e807]:
+                        - /url: /Tankaneo-Sweater-Crewneck-Sweaters-Pleated/dp/B0FFH1CRN4/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - img [ref=e810]
+                      - link [ref=e813]:
+                        - /url: /Tankaneo-Sweater-Crewneck-Sweaters-Pleated/dp/B0FFH1CRN4/?_encoding=UTF8&pd_rd_w=OMh8z&content-id=amzn1.sym.c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_p=c78e0b17-96da-40d6-92cf-3ee4f4f7add9&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_ic_t1
+                        - generic [ref=e814]: Tankaneo Womens 2 Piece Skirt Sets Pullover Sweaters Pleated Mini Skirt Fall Winter Knit Trendy Sweater Sets
+                        - generic [ref=e816]: 14% off Limited time deal
+        - generic [ref=e820]:
+          - heading [level=2] [ref=e821]: Keep shopping for women's dresses
+          - generic [ref=e822]:
+            - list [ref=e824]:
+              - listitem [ref=e825]:
+                - generic [ref=e827]:
+                  - link [ref=e829]:
+                    - /url: /mh/?_encoding=UTF8&_encoding=UTF8&ref_=ci_mcx_mr_mosaic_fy_union&s=B0DGFQYWRN&ip=false&am=true&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+                    - heading [level=3] [ref=e831]:
+                      - generic [ref=e832]:
+                        - generic [ref=e833]: For you
+                        - generic [ref=e834]: For you
+                    - img [ref=e835]
+                  - list [ref=e840]:
+                    - listitem [ref=e841]:
+                      - generic [ref=e843]:
+                        - generic [ref=e844]:
+                          - link [ref=e845]:
+                            - /url: /Saodimallsu-Womens-Sweater-Bodycon-Dresses/dp/B0H5WNWVP4/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDozMDE0NjkzOTExNzA3MDI6MDowOjo=&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - button [ref=e852] [cursor=pointer]: Sponsored
+                        - link [ref=e855]:
+                          - /url: /Saodimallsu-Womens-Sweater-Bodycon-Dresses/dp/B0H5WNWVP4/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDozMDE0NjkzOTExNzA3MDI6MDowOjo=&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e858]:
+                            - generic [ref=e859]: Saodimallsu Womens Sweater Dress Cable Knit Mini Dress Sexy Bodycon Dresses | Crewneck, Trendy Dressy Casual Style,...
+                            - generic [ref=e860]: Saodimallsu Women…
+                          - generic [ref=e862]:
+                            - generic [ref=e863]: $30.99
+                            - generic [ref=e864]:
+                              - text: $
+                              - generic [ref=e865]:
+                                - text: "30"
+                                - generic [ref=e866]: .
+                              - text: "99"
+                    - listitem [ref=e867]:
+                      - generic [ref=e869]:
+                        - link [ref=e871]:
+                          - /url: /Hooever-Corduroy-Overall-Skirtall-Pinafore/dp/B0FC2GGSV9/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZDMkdHU1Y5Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - link [ref=e876]:
+                          - /url: /Hooever-Corduroy-Overall-Skirtall-Pinafore/dp/B0FC2GGSV9/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZDMkdHU1Y5Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e879]:
+                            - generic [ref=e880]: Hooever Women Corduroy Overall Dress V Neck Pinafore Mini Dress | Corduroy Fabric, Sleeveless Pinafore, Two Front...
+                            - generic [ref=e881]: Hooever Women Cor…
+                          - generic [ref=e883]:
+                            - generic [ref=e884]: $29.99
+                            - generic [ref=e885]:
+                              - text: $
+                              - generic [ref=e886]:
+                                - text: "29"
+                                - generic [ref=e887]: .
+                              - text: "99"
+                    - listitem [ref=e888]:
+                      - generic [ref=e890]:
+                        - link [ref=e892]:
+                          - /url: /Navneet-Corduroy-Overall-Sleeveless-Pinafore/dp/B0F99WR58L/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEY5OVdSNThMOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - link [ref=e897]:
+                          - /url: /Navneet-Corduroy-Overall-Sleeveless-Pinafore/dp/B0F99WR58L/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEY5OVdSNThMOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e900]:
+                            - generic [ref=e901]: Navneet Women Corduroy Overall Dress V Neck Pinafore Jumper Mini Dress | Sleeveless Overall Dress with Pockets, Fall...
+                            - generic [ref=e902]: Navneet Women Cor…
+                          - generic [ref=e904]:
+                            - generic [ref=e905]: $29.99
+                            - generic [ref=e906]:
+                              - text: $
+                              - generic [ref=e907]:
+                                - text: "29"
+                                - generic [ref=e908]: .
+                              - text: "99"
+                    - listitem [ref=e909]:
+                      - generic [ref=e911]:
+                        - link [ref=e913]:
+                          - /url: /Zeagoo-Sweater-Sleeveless-Pullover-Dresses/dp/B0FCML8SMF/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZDTUw4U01GOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - link [ref=e918]:
+                          - /url: /Zeagoo-Sweater-Sleeveless-Pullover-Dresses/dp/B0FCML8SMF/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZDTUw4U01GOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e921]:
+                            - generic [ref=e922]: Zeagoo Women's Sweater Vest Dresses for Women 2026 V Neck Sleeveless Knit Pullover Sweater with Pockets Fall Winter Outfits
+                            - generic [ref=e923]: Zeagoo Women's Sw…
+                          - generic [ref=e925]:
+                            - generic [ref=e926]: $29.98
+                            - generic [ref=e927]:
+                              - text: $
+                              - generic [ref=e928]:
+                                - text: "29"
+                                - generic [ref=e929]: .
+                              - text: "98"
+                    - listitem [ref=e930]:
+                      - generic [ref=e932]:
+                        - link [ref=e934]:
+                          - /url: /Yousify-Corduroy-Overall-Dresses-Sleeveless/dp/B0FDKZ4W26/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZES1o0VzI2Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - link [ref=e939]:
+                          - /url: /Yousify-Corduroy-Overall-Dresses-Sleeveless/dp/B0FDKZ4W26/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZES1o0VzI2Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e942]:
+                            - generic [ref=e943]: Yousify Womens Corduroy Overall Dress 2026 Fall Jumper Mini Dresses Rompers | Sleeveless Pinafore Jumper Dress, Square...
+                            - generic [ref=e944]: Yousify Womens Cor…
+                          - generic [ref=e946]:
+                            - generic [ref=e947]: $29.98
+                            - generic [ref=e948]:
+                              - text: $
+                              - generic [ref=e949]:
+                                - text: "29"
+                                - generic [ref=e950]: .
+                              - text: "98"
+                    - listitem [ref=e951]:
+                      - generic [ref=e953]:
+                        - link [ref=e955]:
+                          - /url: /EVALESS-Corduroy-Overall-Sleeveless-Pinafore/dp/B0H4VK8V24/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEg0Vks4VjI0Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                        - link [ref=e960]:
+                          - /url: /EVALESS-Corduroy-Overall-Sleeveless-Pinafore/dp/B0H4VK8V24/?_encoding=UTF8&pd_rd_w=5G26K&content-id=amzn1.sym.49f9815f-50b8-4f3e-92f1-9643f4ba63fa%3Aamzn1.symc.24f3d2d3-e4bc-43ae-866b-96529af77a5d&pf_rd_p=49f9815f-50b8-4f3e-92f1-9643f4ba63fa&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_fy_union_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MToxMDk4ODYwMzMwMzM4MTA5OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEg0Vks4VjI0Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e963]:
+                            - generic [ref=e964]: EVALESS Womens Corduroy Overall Dress Sleeveless Pinafore Pockets | Soft Wale Texture, a Line Layering Fit, Teacher...
+                            - generic [ref=e965]: EVALESS Womens Co…
+                          - generic [ref=e967]:
+                            - generic [ref=e968]: $29.99
+                            - generic [ref=e969]:
+                              - text: $
+                              - generic [ref=e970]:
+                                - text: "29"
+                                - generic [ref=e971]: .
+                              - text: "99"
+              - listitem [ref=e972]:
+                - generic [ref=e974]:
+                  - link [ref=e976]:
+                    - /url: /mh/?_encoding=UTF8&_encoding=UTF8&sif=saMCKNXuLEnmIgcMGKmE9HK2n%2Bf1gPVkeNdsKdCBtrw%3D&as=true&s=B0DGFQYWRN&ip=false&am=true&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+                    - heading [level=3] [ref=e978]:
+                      - generic [ref=e979]:
+                        - generic [ref=e980]: Deals
+                        - generic [ref=e981]: Deals
+                    - img [ref=e982]
+                  - list [ref=e987]:
+                    - listitem [ref=e988]:
+                      - generic [ref=e990]:
+                        - generic [ref=e991]:
+                          - link [ref=e992]:
+                            - /url: /Saodimallsu-Womens-Oversized-Sweater-Dresses/dp/B0FCGBR4L3/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDozMDA5MzI4MjMwNDkxMDI6MDowOjo=&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                            - img [ref=e995]
+                          - button [ref=e1000] [cursor=pointer]: Sponsored
+                        - link [ref=e1003]:
+                          - /url: /Saodimallsu-Womens-Oversized-Sweater-Dresses/dp/B0FCGBR4L3/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDozMDA5MzI4MjMwNDkxMDI6MDowOjo=&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e1004]: Saodimallsu Womens Oversized Sweater Dress Mock Neck Long Sleeve Casual Warm Chunky Knit Fall Winter Maxi Dresses Khaki
+                          - generic [ref=e1006]: 32% off Limited time deal
+                    - listitem [ref=e1007]:
+                      - generic [ref=e1009]:
+                        - link [ref=e1011]:
+                          - /url: /Valiamcep-Womens-Sleeve-Bodycon-Dresses/dp/B0DLZ9N166/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMERMWjlOMTY2Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - img [ref=e1014]
+                        - link [ref=e1017]:
+                          - /url: /Valiamcep-Womens-Sleeve-Bodycon-Dresses/dp/B0DLZ9N166/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMERMWjlOMTY2Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e1018]: Valiamcep Womens Long Sleeve Ribbed Knit Bodycon Mini Dresses Brown XS
+                          - generic [ref=e1020]: 20% off Limited time deal
+                    - listitem [ref=e1021]:
+                      - generic [ref=e1023]:
+                        - link [ref=e1025]:
+                          - /url: /Aphratti-Womens-Sleeve-Casual-X-Large/dp/B01LPOSS26/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMDFMUE9TUzI2Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - img [ref=e1028]
+                        - link [ref=e1031]:
+                          - /url: /Aphratti-Womens-Sleeve-Casual-X-Large/dp/B01LPOSS26/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMDFMUE9TUzI2Og==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e1032]: Aphratti Women's Long Sleeve Peter Pan Collar Goth Dress Purple X-Large
+                          - generic [ref=e1034]: 10% off Limited time deal
+                    - listitem [ref=e1035]:
+                      - generic [ref=e1037]:
+                        - link [ref=e1039]:
+                          - /url: /MEROKEETY-Womens-Bodycon-Sweater-Burgundy/dp/B0B3JBGDHV/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEIzSkJHREhWOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - img [ref=e1042]
+                        - link [ref=e1045]:
+                          - /url: /MEROKEETY-Womens-Bodycon-Sweater-Burgundy/dp/B0B3JBGDHV/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEIzSkJHREhWOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e1046]: MEROKEETY Women's 2025 Fall Long Sleeve Bodycon Sweater Dress Winter V Neck Cable Knit Slit Midi Dresses, Burgundy, L
+                          - generic [ref=e1048]: 10% off Limited time deal
+                    - listitem [ref=e1049]:
+                      - generic [ref=e1051]:
+                        - link [ref=e1053]:
+                          - /url: /Veatzaer-Womens-Spaghetti-Bodycon-Dresses/dp/B0BQ6WMVR3/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEJRNldNVlIzOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - img [ref=e1056]
+                        - link [ref=e1059]:
+                          - /url: /Veatzaer-Womens-Spaghetti-Bodycon-Dresses/dp/B0BQ6WMVR3/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEJRNldNVlIzOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e1060]: Veatzaer Womens Summer Sleeveless Slip Dresses Casual Spaghetti Strap Sundress Solid Basic Cami Short Tank Dress Coffee
+                          - generic [ref=e1062]: 10% off Limited time deal
+                    - listitem [ref=e1063]:
+                      - generic [ref=e1065]:
+                        - link [ref=e1067]:
+                          - /url: /PRETTYGARDEN-Dresses-Sleeveless-Pleated-Cocktail/dp/B0FQSZ15RC/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZRU1oxNVJDOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - img [ref=e1070]
+                        - link [ref=e1073]:
+                          - /url: /PRETTYGARDEN-Dresses-Sleeveless-Pleated-Cocktail/dp/B0FQSZ15RC/?_encoding=UTF8&pd_rd_w=vj8Zr&content-id=amzn1.sym.b9d7387c-9b23-4fd6-9b40-52a96fe04b0c%3Aamzn1.symc.12edab06-c53d-404d-8b2f-0cf6e2c6ec18&pf_rd_p=b9d7387c-9b23-4fd6-9b40-52a96fe04b0c&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_deals_hxwHBF_sspa_dk_gateway&ie=UTF8&psc=1&spc=MTo2MTQzNTg2MjI5NDQ2NTI4OjE3OTAxOTcwMTc6c3BfaG9tZXBhZ2VfYmxlbmRlZDo6OjpCMEZRU1oxNVJDOg==&sloctc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ob21lcGFnZV9ibGVuZGVk
+                          - generic [ref=e1074]: PRETTYGARDEN Women's Summer V Neck Pleated Midi Dress,Pink,S
+                          - generic [ref=e1076]: 24% off Limited time deal
+              - listitem [ref=e1077]:
+                - generic [ref=e1079]:
+                  - link [ref=e1081]:
+                    - /url: /mh/?_encoding=UTF8&_encoding=UTF8&ref_=ci_mcx_mr_mosaic_ts&s=B0H5Q5GKR1&ip=false&am=true&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+                    - heading [level=3] [ref=e1083]:
+                      - generic [ref=e1084]:
+                        - generic [ref=e1085]: Best Sellers
+                        - generic [ref=e1086]: Best Sellers
+                    - img [ref=e1087]
+                  - list [ref=e1092]:
+                    - listitem [ref=e1093]:
+                      - generic [ref=e1095]:
+                        - link [ref=e1097]:
+                          - /url: /Womens-Elegant-Ruched-Floral-Wedding/dp/B0H5Q5GKR1/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - img [ref=e1100]
+                        - link [ref=e1103]:
+                          - /url: /Womens-Elegant-Ruched-Floral-Wedding/dp/B0H5Q5GKR1/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - generic [ref=e1104]: Women's Elegant Ruched Floral Maxi Wedding Guest Dress,M,Wine Red
+                          - generic [ref=e1107]:
+                            - generic [ref=e1108]: 1K+ bought in past month
+                            - generic [ref=e1109]: 1K+ bought in past month
+                    - listitem [ref=e1110]:
+                      - generic [ref=e1112]:
+                        - link [ref=e1114]:
+                          - /url: /PRETTYGARDEN-Dresses-Business-Graduation-Cocktail/dp/B0F4N2ZXKD/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - img [ref=e1117]
+                        - link [ref=e1120]:
+                          - /url: /PRETTYGARDEN-Dresses-Business-Graduation-Cocktail/dp/B0F4N2ZXKD/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - generic [ref=e1121]: PRETTYGARDEN Women's A Line Elegant Summer Cocktail Dresses, Black,M
+                          - generic [ref=e1124]:
+                            - generic [ref=e1125]: 2K+ bought in past month
+                            - generic [ref=e1126]: 2K+ bought in past month
+                    - listitem [ref=e1127]:
+                      - generic [ref=e1129]:
+                        - link [ref=e1131]:
+                          - /url: /Memoriesea-Womens-Shoulder-Cocktail-Wedding/dp/B0CN66SR36/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - img [ref=e1134]
+                        - link [ref=e1137]:
+                          - /url: /Memoriesea-Womens-Shoulder-Cocktail-Wedding/dp/B0CN66SR36/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - generic [ref=e1138]: Memoriesea Women's High Split Wedding Guest Party Maxi Dress Wine Red
+                          - generic [ref=e1141]:
+                            - generic [ref=e1142]: 600+ bought in past month
+                            - generic [ref=e1143]: 600+ bought in past month
+                    - listitem [ref=e1144]:
+                      - generic [ref=e1146]:
+                        - link [ref=e1148]:
+                          - /url: /GRECERELLE-Womens-Summer-Casual-Pockets/dp/B0CR5HKB56/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - img [ref=e1151]
+                        - link [ref=e1154]:
+                          - /url: /GRECERELLE-Womens-Summer-Casual-Pockets/dp/B0CR5HKB56/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - generic [ref=e1155]: GRECERELLE Women's Summer Casual Loose Split Long Maxi Sun Dress with Pockets (Medium, Black)
+                          - generic [ref=e1158]:
+                            - generic [ref=e1159]: 4K+ bought in past month
+                            - generic [ref=e1160]: 4K+ bought in past month
+                    - listitem [ref=e1161]:
+                      - generic [ref=e1163]:
+                        - link [ref=e1165]:
+                          - /url: /BTFBM-Dresses-Lightweight-Elastic-Pockets/dp/B0DHWZCZ37/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - img [ref=e1168]
+                        - link [ref=e1171]:
+                          - /url: /BTFBM-Dresses-Lightweight-Elastic-Pockets/dp/B0DHWZCZ37/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - generic [ref=e1172]: BTFBM Womens Summer 2026 Casual Maxi Dresses Lightweight Short Sleeve Dress
+                          - generic [ref=e1175]:
+                            - generic [ref=e1176]: 800+ bought in past month
+                            - generic [ref=e1177]: 800+ bought in past month
+                    - listitem [ref=e1178]:
+                      - generic [ref=e1180]:
+                        - link [ref=e1182]:
+                          - /url: /BTFBM-Dresses-Evening-Sleeveless-Bodycon/dp/B0CRKRXPB6/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - img [ref=e1185]
+                        - link [ref=e1188]:
+                          - /url: /BTFBM-Dresses-Evening-Sleeveless-Bodycon/dp/B0CRKRXPB6/?_encoding=UTF8&pd_rd_w=xN3B6&content-id=amzn1.sym.c5f20f64-1912-4f32-aed0-dd243569817f%3Aamzn1.symc.5f141e69-6a5f-4958-bb6a-5b6c26c5e46b&pf_rd_p=c5f20f64-1912-4f32-aed0-dd243569817f&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_ci_mcx_mr_mosaic_ts
+                          - generic [ref=e1189]: BTFBM Women Ruched Bodycon Maxi Dresses Summer Casual,Black,M
+                          - generic [ref=e1192]:
+                            - generic [ref=e1193]: 1K+ bought in past month
+                            - generic [ref=e1194]: 1K+ bought in past month
+            - link [ref=e1195]:
+              - /url: "#"
+        - generic [ref=e1197]:
+          - link [ref=e1199]:
+            - /url: /b/?_encoding=UTF8&_encoding=UTF8&node=207316900011&ref_=fashion&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22218493790011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5#dossier-asin-grid
+            - heading [level=3] [ref=e1201]:
+              - generic [ref=e1202]:
+                - generic [ref=e1203]: Shop new and trending styles
+                - generic [ref=e1204]: Shop new and trending styles
+            - img [ref=e1205]
+          - list [ref=e1210]:
+            - listitem [ref=e1211]:
+              - generic [ref=e1213]:
+                - link [ref=e1215]:
+                  - /url: /CIDER-Womens-Floral-Jacquard-Micro/dp/B0HB3JTDQG/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                - link [ref=e1220]:
+                  - /url: /CIDER-Womens-Floral-Jacquard-Micro/dp/B0HB3JTDQG/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                  - generic [ref=e1223]:
+                    - generic [ref=e1224]: CIDER Womens Floral Jacquard Split Mini Skort Low Rise | Stretch Texture Built In Shorts Statement Bottom
+                    - generic [ref=e1225]: CIDER Womens Fl…
+                  - generic [ref=e1227]:
+                    - generic [ref=e1228]: $33.99
+                    - generic [ref=e1229]:
+                      - text: $
+                      - generic [ref=e1230]:
+                        - text: "33"
+                        - generic [ref=e1231]: .
+                      - text: "99"
+            - listitem [ref=e1232]:
+              - generic [ref=e1234]:
+                - link [ref=e1236]:
+                  - /url: /CIDER-Plaid-Pleated-Pockets-Office/dp/B0H5WDY82G/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                - link [ref=e1241]:
+                  - /url: /CIDER-Plaid-Pleated-Pockets-Office/dp/B0H5WDY82G/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                  - generic [ref=e1244]:
+                    - generic [ref=e1245]: CIDER Plaid Pleated Midi Skirt with Pockets Office Fall Skirt | Gingham Long Skirt, Middle Waist, A Line Skirt, Trendy...
+                    - generic [ref=e1246]: CIDER Plaid Pleat…
+                  - generic [ref=e1248]:
+                    - generic [ref=e1249]: $39.99
+                    - generic [ref=e1250]:
+                      - text: $
+                      - generic [ref=e1251]:
+                        - text: "39"
+                        - generic [ref=e1252]: .
+                      - text: "99"
+            - listitem [ref=e1253]:
+              - generic [ref=e1255]:
+                - link [ref=e1257]:
+                  - /url: /CIDER-Womens-Satin-Polka-Flared/dp/B0HF6VCYR5/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                - link [ref=e1262]:
+                  - /url: /CIDER-Womens-Satin-Polka-Flared/dp/B0HF6VCYR5/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                  - generic [ref=e1265]:
+                    - generic [ref=e1266]: CIDER Womens Satin Mid Rise Polka Dot Flared Maxi Skirt | Spring Summer Lined Occasion Bottom
+                    - generic [ref=e1267]: CIDER Womens S…
+                  - generic [ref=e1269]:
+                    - generic [ref=e1270]: $42.99
+                    - generic [ref=e1271]:
+                      - text: $
+                      - generic [ref=e1272]:
+                        - text: "42"
+                        - generic [ref=e1273]: .
+                      - text: "99"
+            - listitem [ref=e1274]:
+              - generic [ref=e1276]:
+                - link [ref=e1278]:
+                  - /url: /CIDER-Plaid-Skirt-Women-Waisted/dp/B0H5TTSQY1/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                - link [ref=e1283]:
+                  - /url: /CIDER-Plaid-Skirt-Women-Waisted/dp/B0H5TTSQY1/?_encoding=UTF8&pd_rd_w=UW8IQ&content-id=amzn1.sym.199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_p=199d8910-b7af-4cff-8821-7f0ffaa1f1e6&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_fabric-na-trending-styles-pag-b
+                  - generic [ref=e1286]:
+                    - generic [ref=e1287]: CIDER Plaid Midi Skirt for Women A Line High Waisted Long Skirt with Belt | Pencil Skirt, Slim Fit, Business Casual...
+                    - generic [ref=e1288]: CIDER Plaid Midi…
+                  - generic [ref=e1290]:
+                    - generic [ref=e1291]: $45.99
+                    - generic [ref=e1292]:
+                      - text: $
+                      - generic [ref=e1293]:
+                        - text: "45"
+                        - generic [ref=e1294]: .
+                      - text: "99"
+        - generic [ref=e1297]:
+          - link [ref=e1299]:
+            - /url: /events/devicedeals/?_encoding=UTF8&ref_=dealz_sod_see_more&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+            - heading [level=3] [ref=e1301]:
+              - generic [ref=e1302]:
+                - generic [ref=e1303]: Save on Amazon Devices
+                - generic [ref=e1304]: Save on Amazon Devices
+            - img [ref=e1305]
+          - list [ref=e1308]:
+            - listitem [ref=e1309]:
+              - generic [ref=e1312]:
+                - link [ref=e1314]:
+                  - /url: /Ring-Floodlight-Wide-Angle-Ultra-Bright-Floodlights/dp/B0GX2LK7HS/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - img [ref=e1317]
+                - link [ref=e1320]:
+                  - /url: /Ring-Floodlight-Wide-Angle-Ultra-Bright-Floodlights/dp/B0GX2LK7HS/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - generic [ref=e1321]: Ring Floodlight Cam 2K (newest model), Wired, Home or business security, Wide-Angle Retinal 2K Video, 6x Enhanced Zoom, Ultra-Bright Floodlights, 3-Pack, Black
+                  - generic [ref=e1323]: 50% off Limited time deal
+            - listitem [ref=e1324]:
+              - generic [ref=e1327]:
+                - link [ref=e1329]:
+                  - /url: /Blink-Outdoor-newest-model-plug/dp/B0H1GTPMC4/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - img [ref=e1332]
+                - link [ref=e1335]:
+                  - /url: /Blink-Outdoor-newest-model-plug/dp/B0H1GTPMC4/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - generic [ref=e1336]: Blink Outdoor 2K+ and Mini 2K+ (newest model) — Wireless and plug-in 2K resolution smart security cameras, Sync Module Core included — 2 Cameras (White)
+                  - generic [ref=e1338]: 64% off Limited time deal
+            - listitem [ref=e1339]:
+              - generic [ref=e1342]:
+                - link [ref=e1344]:
+                  - /url: /Ring-Spotlight-Wide-Angle-Motion-Activated-Spotlights/dp/B0GXBT3NMQ/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - img [ref=e1347]
+                - link [ref=e1350]:
+                  - /url: /Ring-Spotlight-Wide-Angle-Motion-Activated-Spotlights/dp/B0GXBT3NMQ/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - generic [ref=e1351]: Ring Spotlight Cam 2K (newest model), Plug-In, Home or business security, Wide-Angle Retinal 2K Video, 6x Enhanced Zoom, Motion-Activated Spotlights, 4-Pack, White
+                  - generic [ref=e1353]: 47% off Limited time deal
+            - listitem [ref=e1354]:
+              - generic [ref=e1357]:
+                - link [ref=e1359]:
+                  - /url: /Blink-Outdoor-newest-model-Wireless/dp/B0DHLQT3CG/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - img [ref=e1362]
+                - link [ref=e1365]:
+                  - /url: /Blink-Outdoor-newest-model-Wireless/dp/B0DHLQT3CG/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - generic [ref=e1366]: Blink Outdoor 4 – Wireless smart security camera, two-year battery life, 1080p HD day and infrared night live view, two-way talk. Sync Module Core included – 3 camera system
+                  - generic [ref=e1368]: 65% off Limited time deal
+            - listitem [ref=e1369]:
+              - generic [ref=e1372]:
+                - link [ref=e1374]:
+                  - /url: /Blink-Outdoor-newest-model-plug/dp/B0H1GWP7MC/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - img [ref=e1377]
+                - link [ref=e1380]:
+                  - /url: /Blink-Outdoor-newest-model-plug/dp/B0H1GWP7MC/?_encoding=UTF8&pd_rd_w=tOoq8&content-id=amzn1.sym.6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_p=6aa1e024-36e9-46ec-8d2c-3a3dbe8d1068&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_dealz_sod
+                  - generic [ref=e1381]: Blink Outdoor 2K+ and Mini 2K+ (newest model) — Wireless and plug-in 2K resolution smart security cameras, Sync Module Core included — 4 Cameras (Black)
+                  - generic [ref=e1383]: 65% off Limited time deal
+        - generic [ref=e1385]:
+          - link [ref=e1387]:
+            - /url: /b/?_encoding=UTF8&node=118268301011&ref_=hub&language=en_US&pd_rd_w=497MD&content-id=amzn1.sym.06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_p=06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5
+            - heading [level=3] [ref=e1389]:
+              - generic [ref=e1390]:
+                - generic [ref=e1391]: Shop fall premium picks
+                - generic [ref=e1392]: Shop fall premium picks
+            - img [ref=e1393]
+          - list [ref=e1396]:
+            - listitem [ref=e1397]:
+              - link [ref=e1398]:
+                - /url: /b/?_encoding=UTF8&node=211002423011&ref_=prem26_fall_gather_dt_cta&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&pd_rd_w=497MD&content-id=amzn1.sym.06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_p=06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5#dossier-asin-grid
+                - img [ref=e1399]
+                - generic [ref=e1402]:
+                  - generic [ref=e1403]: Hosting essentials
+                  - generic [ref=e1404]: Hosting essentials
+            - listitem [ref=e1405]:
+              - link [ref=e1406]:
+                - /url: /b/?_encoding=UTF8&node=215475797011&ref_=prem26_fall_edit_dt_cta&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&pd_rd_w=497MD&content-id=amzn1.sym.06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_p=06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5#dossier-asin-grid
+                - img [ref=e1407]
+                - generic [ref=e1410]:
+                  - generic [ref=e1411]: Seasonal styles
+                  - generic [ref=e1412]: Seasonal styles
+            - listitem [ref=e1413]:
+              - link [ref=e1414]:
+                - /url: /b/?_encoding=UTF8&node=214283265011&ref_=prem26_fall_top100_dt_cta&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&pd_rd_w=497MD&content-id=amzn1.sym.06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_p=06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5#dossier-asin-grid
+                - img [ref=e1415]
+                - generic [ref=e1418]:
+                  - generic [ref=e1419]: Top 100+
+                  - generic [ref=e1420]: Top 100+
+            - listitem [ref=e1421]:
+              - link [ref=e1422]:
+                - /url: /b/?_encoding=UTF8&node=211002427011&ref_=prem26_fall_comfort_dt_cta&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&pd_rd_w=497MD&content-id=amzn1.sym.06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_p=06fa11cf-9a8d-4aba-bb22-1a0eee4808a8&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5#dossier-asin-grid
+                - img [ref=e1423]
+                - generic [ref=e1426]:
+                  - generic [ref=e1427]: Cozy finds
+                  - generic [ref=e1428]: Cozy finds
+        - generic [ref=e1430]:
+          - link [ref=e1432]:
+            - /url: /stores/page/ED4B2AD1-489A-401F-A6A7-8D21CE8E0367/?_encoding=UTF8&ingress=0&visitId=ea1c852b-61e6-452e-895e-a0bf1873398e&channel=abpf26_4fe&pd_rd_w=NP3G8&content-id=amzn1.sym.887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_p=887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_unk
+            - heading [level=3] [ref=e1434]:
+              - generic [ref=e1435]:
+                - generic [ref=e1436]: Fall styles for all
+                - generic [ref=e1437]: Fall styles for all
+            - img [ref=e1438]
+          - list [ref=e1441]:
+            - listitem [ref=e1442]:
+              - link [ref=e1443]:
+                - /url: /stores/page/D88C00AC-CB0B-44F5-8847-29AF9A057D8F/?_encoding=UTF8&channel=aepf26_1fm&pd_rd_w=NP3G8&content-id=amzn1.sym.887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_p=887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_unk
+                - img [ref=e1444]
+                - generic [ref=e1447]:
+                  - generic [ref=e1448]: Men’s
+                  - generic [ref=e1449]: Men’s
+            - listitem [ref=e1450]:
+              - link [ref=e1451]:
+                - /url: /stores/page/57A5BE4B-6946-4CF4-9283-99D5CE7A7B97/?_encoding=UTF8&channel=aepf26_1fw&pd_rd_w=NP3G8&content-id=amzn1.sym.887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_p=887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_unk
+                - img [ref=e1452]
+                - generic [ref=e1455]:
+                  - generic [ref=e1456]: Women’s
+                  - generic [ref=e1457]: Women’s
+            - listitem [ref=e1458]:
+              - link [ref=e1459]:
+                - /url: /stores/page/46E660AB-9E6D-44A2-832B-7D81005B230D/?_encoding=UTF8&channel=aepf26_1fk&pd_rd_w=NP3G8&content-id=amzn1.sym.887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_p=887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_unk
+                - img [ref=e1460]
+                - generic [ref=e1463]:
+                  - generic [ref=e1464]: Kids’
+                  - generic [ref=e1465]: Kids’
+            - listitem [ref=e1466]:
+              - link [ref=e1467]:
+                - /url: /stores/page/79190B10-D00F-42D9-80BC-252CFCAD5916/?_encoding=UTF8&channel=abpf26_4fe&pd_rd_w=NP3G8&content-id=amzn1.sym.887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_p=887724b1-0ad3-4069-bf3f-525d75ad7f31&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_unk
+                - img [ref=e1468]
+                - generic [ref=e1471]:
+                  - generic [ref=e1472]: Accessories
+                  - generic [ref=e1473]: Accessories
+        - generic [ref=e1476]:
+          - heading [level=3] [ref=e1479]:
+            - link [ref=e1480]:
+              - /url: /b?node=220434588011&pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&ref_=pd_hp_d_r_btf_unk_cta
+              - generic [ref=e1481]: Halloween deals you can't miss
+              - generic [ref=e1482]: ", See more"
+          - region [ref=e1486]:
+            - list [ref=e1491]:
+              - listitem [ref=e1492]:
+                - link [ref=e1495]:
+                  - /url: /Shameless-All-Stars-Gluten-Free-Raspberry-Watermelon/dp/B0F1DR9ZRL?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0F1DR9ZRL&ref_=pd_hp_d_r_btf_unk_B0F1DR9ZRL
+                  - img [ref=e1497]
+                  - generic [ref=e1498]:
+                    - generic [ref=e1500]: 17% off Ends in
+                    - generic [ref=e1501]:
+                      - generic [ref=e1502]:
+                        - generic [ref=e1503]: $19.99
+                        - generic [ref=e1504]:
+                          - text: $
+                          - generic [ref=e1505]: "19"
+                          - text: "99"
+                      - generic [ref=e1506]:
+                        - generic [ref=e1507]: Typical price
+                        - generic [ref=e1508]:
+                          - generic [ref=e1509]: $23.99
+                          - text: $23.99
+              - listitem [ref=e1510]:
+                - link [ref=e1513]:
+                  - /url: /LIMIROLER-Princess-Clothes-Birthday-Christmas/dp/B0DF2V6NHW?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0DF2V6NHW&ref_=pd_hp_d_r_btf_unk_B0DF2V6NHW
+                  - img [ref=e1515]
+                  - generic [ref=e1516]:
+                    - generic [ref=e1518]: 16% off Limited time deal
+                    - generic [ref=e1519]:
+                      - generic [ref=e1520]:
+                        - generic [ref=e1521]: $28.55
+                        - generic [ref=e1522]:
+                          - text: $
+                          - generic [ref=e1523]: "28"
+                          - text: "55"
+                      - generic [ref=e1524]:
+                        - generic [ref=e1525]: "Typical:"
+                        - generic [ref=e1526]:
+                          - generic [ref=e1527]: $33.99
+                          - text: $33.99
+              - listitem [ref=e1528]:
+                - link [ref=e1531]:
+                  - /url: /Spooktacular-Creations-costume-Halloween-Cosplay-S/dp/B0989VN9CN?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0989VN9CN&ref_=pd_hp_d_r_btf_unk_B0989VN9CN
+                  - img [ref=e1533]
+                  - generic [ref=e1534]:
+                    - generic [ref=e1536]: 10% off Limited time deal
+                    - generic [ref=e1537]:
+                      - generic [ref=e1538]:
+                        - generic [ref=e1539]: $32.39
+                        - generic [ref=e1540]:
+                          - text: $
+                          - generic [ref=e1541]: "32"
+                          - text: "39"
+                      - generic [ref=e1542]:
+                        - generic [ref=e1543]: "Typical:"
+                        - generic [ref=e1544]:
+                          - generic [ref=e1545]: $35.99
+                          - text: $35.99
+              - listitem [ref=e1546]:
+                - link [ref=e1549]:
+                  - /url: /Vampire-Halloween-Role-Playing-Carnival-Vampire-Themed/dp/B08BX5L5M3?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B08BX5L5M3&ref_=pd_hp_d_r_btf_unk_B08BX5L5M3
+                  - img [ref=e1551]
+                  - generic [ref=e1552]:
+                    - generic [ref=e1554]: 15% off Ends in
+                    - generic [ref=e1555]:
+                      - generic [ref=e1556]:
+                        - generic [ref=e1557]: $21.99
+                        - generic [ref=e1558]:
+                          - text: $
+                          - generic [ref=e1559]: "21"
+                          - text: "99"
+                      - generic [ref=e1560]:
+                        - generic [ref=e1561]: Typical price
+                        - generic [ref=e1562]:
+                          - generic [ref=e1563]: $25.99
+                          - text: $25.99
+              - listitem [ref=e1564]:
+                - link [ref=e1567]:
+                  - /url: /Spooktacular-Creations-Banana-Costume-Standard/dp/B07H45M5TQ?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B07H45M5TQ&ref_=pd_hp_d_r_btf_unk_B07H45M5TQ
+                  - img [ref=e1569]
+                  - generic [ref=e1570]:
+                    - generic [ref=e1572]: 18% off Limited time deal
+                    - generic [ref=e1573]:
+                      - generic [ref=e1574]:
+                        - generic [ref=e1575]: $19.79
+                        - generic [ref=e1576]:
+                          - text: $
+                          - generic [ref=e1577]: "19"
+                          - text: "79"
+                      - generic [ref=e1578]:
+                        - generic [ref=e1579]: "Typical:"
+                        - generic [ref=e1580]:
+                          - generic [ref=e1581]: $23.99
+                          - text: $23.99
+              - listitem [ref=e1582]:
+                - link [ref=e1585]:
+                  - /url: /miwhse-Inflatable-Dinosaur-Costume-Halloween/dp/B0CWTNMDVD?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0CWTNMDVD&ref_=pd_hp_d_r_btf_unk_B0CWTNMDVD
+                  - img [ref=e1587]
+                  - generic [ref=e1588]:
+                    - generic [ref=e1590]: 10% off Limited time deal
+                    - generic [ref=e1591]:
+                      - generic [ref=e1592]:
+                        - generic [ref=e1593]: $26.99
+                        - generic [ref=e1594]:
+                          - text: $
+                          - generic [ref=e1595]: "26"
+                          - text: "99"
+                      - generic [ref=e1596]:
+                        - generic [ref=e1597]: "Typical:"
+                        - generic [ref=e1598]:
+                          - generic [ref=e1599]: $29.99
+                          - text: $29.99
+              - listitem [ref=e1600]:
+                - link [ref=e1603]:
+                  - /url: /Fedio-Princess-Dress-Unicorn-Halloween/dp/B0DBQH46SK?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0DBQH46SK&ref_=pd_hp_d_r_btf_unk_B0DBQH46SK
+                  - img [ref=e1605]
+                  - generic [ref=e1606]:
+                    - generic [ref=e1608]: 10% off Limited Prime deal
+                    - generic [ref=e1609]:
+                      - generic [ref=e1610]:
+                        - generic [ref=e1611]: $15.38
+                        - generic [ref=e1612]:
+                          - text: $
+                          - generic [ref=e1613]: "15"
+                          - text: "38"
+                      - generic [ref=e1614]:
+                        - generic [ref=e1615]: "Typical price:"
+                        - generic [ref=e1616]:
+                          - generic [ref=e1617]: $17.09
+                          - text: $17.09
+              - listitem [ref=e1618]:
+                - link [ref=e1621]:
+                  - /url: /DILUFUN-Dinosaur-Costume-Halloween-3-36months/dp/B0F98MJ46V?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0F98MJ46V&ref_=pd_hp_d_r_btf_unk_B0F98MJ46V
+                  - img [ref=e1623]
+                  - generic [ref=e1624]:
+                    - generic [ref=e1626]: 17% off Limited time deal
+                    - generic [ref=e1627]:
+                      - generic [ref=e1628]:
+                        - generic [ref=e1629]: $19.99
+                        - generic [ref=e1630]:
+                          - text: $
+                          - generic [ref=e1631]: "19"
+                          - text: "99"
+                      - generic [ref=e1632]:
+                        - generic [ref=e1633]: "Typical:"
+                        - generic [ref=e1634]:
+                          - generic [ref=e1635]: $23.99
+                          - text: $23.99
+              - listitem [ref=e1636]:
+                - link [ref=e1639]:
+                  - /url: /viwzon-Inflatable-Dinosaur-Halloween-Costumes/dp/B0D9XJ4GTX?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0D9XJ4GTX&ref_=pd_hp_d_r_btf_unk_B0D9XJ4GTX
+                  - img [ref=e1641]
+                  - generic [ref=e1642]:
+                    - generic [ref=e1644]: 10% off Limited time deal
+                    - generic [ref=e1645]:
+                      - generic [ref=e1646]:
+                        - generic [ref=e1647]: $29.69
+                        - generic [ref=e1648]:
+                          - text: $
+                          - generic [ref=e1649]: "29"
+                          - text: "69"
+                      - generic [ref=e1650]:
+                        - generic [ref=e1651]: "Typical:"
+                        - generic [ref=e1652]:
+                          - generic [ref=e1653]: $32.99
+                          - text: $32.99
+              - listitem [ref=e1654]:
+                - link [ref=e1657]:
+                  - /url: /Meland-Mermaid-Dress-Girls-Princess/dp/B0C7QYH62Y?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0C7QYH62Y&ref_=pd_hp_d_r_btf_unk_B0C7QYH62Y
+                  - img [ref=e1659]
+                  - generic [ref=e1660]:
+                    - generic [ref=e1662]: 17% off Limited time deal
+                    - generic [ref=e1663]:
+                      - generic [ref=e1664]:
+                        - generic [ref=e1665]: $19.99
+                        - generic [ref=e1666]:
+                          - text: $
+                          - generic [ref=e1667]: "19"
+                          - text: "99"
+                      - generic [ref=e1668]:
+                        - generic [ref=e1669]: "Typical:"
+                        - generic [ref=e1670]:
+                          - generic [ref=e1671]: $23.99
+                          - text: $23.99
+              - listitem [ref=e1672]:
+                - link [ref=e1675]:
+                  - /url: /GIFTINBOX-Costume-Halloween-Cheetah-Outfit/dp/B0H2V1V83B?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0H2V1V83B&ref_=pd_hp_d_r_btf_unk_B0H2V1V83B
+                  - img [ref=e1677]
+                  - generic [ref=e1678]:
+                    - generic [ref=e1680]: 19% off Limited time deal
+                    - generic [ref=e1681]:
+                      - generic [ref=e1682]:
+                        - generic [ref=e1683]: $28.98
+                        - generic [ref=e1684]:
+                          - text: $
+                          - generic [ref=e1685]: "28"
+                          - text: "98"
+                      - generic [ref=e1686]:
+                        - generic [ref=e1687]: "List:"
+                        - generic [ref=e1688]:
+                          - generic [ref=e1689]: $35.99
+                          - text: $35.99
+              - listitem [ref=e1690]:
+                - link [ref=e1693]:
+                  - /url: /Zhitunemi-Renaissance-Overdress-Accessory-Red-M/dp/B07TLL27ZB?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B07TLL27ZB&ref_=pd_hp_d_r_btf_unk_B07TLL27ZB
+                  - img [ref=e1695]
+                  - generic [ref=e1696]:
+                    - generic [ref=e1698]: 10% off Limited time deal
+                    - generic [ref=e1699]:
+                      - generic [ref=e1700]:
+                        - generic [ref=e1701]: $33.24
+                        - generic [ref=e1702]:
+                          - text: $
+                          - generic [ref=e1703]: "33"
+                          - text: "24"
+                      - generic [ref=e1704]:
+                        - generic [ref=e1705]: "List:"
+                        - generic [ref=e1706]:
+                          - generic [ref=e1707]: $36.93
+                          - text: $36.93
+              - listitem [ref=e1708]:
+                - link [ref=e1711]:
+                  - /url: /GIFTINBOX-Halloween-Costume-Animal-Onesie/dp/B0GY4DM191?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0GY4DM191&ref_=pd_hp_d_r_btf_unk_B0GY4DM191
+                  - img [ref=e1713]
+                  - generic [ref=e1714]:
+                    - generic [ref=e1716]: 19% off Limited time deal
+                    - generic [ref=e1717]:
+                      - generic [ref=e1718]:
+                        - generic [ref=e1719]: $28.49
+                        - generic [ref=e1720]:
+                          - text: $
+                          - generic [ref=e1721]: "28"
+                          - text: "49"
+                      - generic [ref=e1722]:
+                        - generic [ref=e1723]: "List:"
+                        - generic [ref=e1724]:
+                          - generic [ref=e1725]: $34.99
+                          - text: $34.99
+              - listitem [ref=e1726]:
+                - link [ref=e1729]:
+                  - /url: /Disney-Toddler-Girls-Casual-Clothes/dp/B0FCXT78Z8?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0FCXT78Z8&ref_=pd_hp_d_r_btf_unk_B0FCXT78Z8
+                  - img [ref=e1731]
+                  - generic [ref=e1732]:
+                    - generic [ref=e1734]: 33% off Limited time deal
+                    - generic [ref=e1735]:
+                      - generic [ref=e1736]:
+                        - generic [ref=e1737]: $19.98
+                        - generic [ref=e1738]:
+                          - text: $
+                          - generic [ref=e1739]: "19"
+                          - text: "98"
+                      - generic [ref=e1740]:
+                        - generic [ref=e1741]: "List:"
+                        - generic [ref=e1742]:
+                          - generic [ref=e1743]: $29.99
+                          - text: $29.99
+              - listitem [ref=e1744]:
+                - link [ref=e1747]:
+                  - /url: /KMiKE-Inflatable-Costume-Halloween-Costumes/dp/B07W2249Z9?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B07W2249Z9&ref_=pd_hp_d_r_btf_unk_B07W2249Z9
+                  - img [ref=e1749]
+                  - generic [ref=e1750]:
+                    - generic [ref=e1752]: 20% off Limited time deal
+                    - generic [ref=e1753]:
+                      - generic [ref=e1754]:
+                        - generic [ref=e1755]: $31.19
+                        - generic [ref=e1756]:
+                          - text: $
+                          - generic [ref=e1757]: "31"
+                          - text: "19"
+                      - generic [ref=e1758]:
+                        - generic [ref=e1759]: "Typical:"
+                        - generic [ref=e1760]:
+                          - generic [ref=e1761]: $38.99
+                          - text: $38.99
+              - listitem [ref=e1762]:
+                - link [ref=e1765]:
+                  - /url: /80s-Men-Workout-Clothing-Halloween/dp/B0DTK79MLL?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0DTK79MLL&ref_=pd_hp_d_r_btf_unk_B0DTK79MLL
+                  - img [ref=e1767]
+                  - generic [ref=e1768]:
+                    - generic [ref=e1770]: 10% off Limited time deal
+                    - generic [ref=e1771]:
+                      - generic [ref=e1772]:
+                        - generic [ref=e1773]: $35.99
+                        - generic [ref=e1774]:
+                          - text: $
+                          - generic [ref=e1775]: "35"
+                          - text: "99"
+                      - generic [ref=e1776]:
+                        - generic [ref=e1777]: "Typical:"
+                        - generic [ref=e1778]:
+                          - generic [ref=e1779]: $39.99
+                          - text: $39.99
+              - listitem [ref=e1780]:
+                - link [ref=e1783]:
+                  - /url: /GIFTINBOX-Firefighter-Costume-Accessories-Halloween/dp/B0C7ZPPN29?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0C7ZPPN29&ref_=pd_hp_d_r_btf_unk_B0C7ZPPN29
+                  - img [ref=e1785]
+                  - generic [ref=e1786]:
+                    - generic [ref=e1788]: 12% off Limited time deal
+                    - generic [ref=e1789]:
+                      - generic [ref=e1790]:
+                        - generic [ref=e1791]: $29.98
+                        - generic [ref=e1792]:
+                          - text: $
+                          - generic [ref=e1793]: "29"
+                          - text: "98"
+                      - generic [ref=e1794]:
+                        - generic [ref=e1795]: "List:"
+                        - generic [ref=e1796]:
+                          - generic [ref=e1797]: $33.99
+                          - text: $33.99
+              - listitem [ref=e1798]:
+                - link [ref=e1801]:
+                  - /url: /GKTZ-Costume-Animal-Halloween-Costumes/dp/B0FG7Z6VDP?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0FG7Z6VDP&ref_=pd_hp_d_r_btf_unk_B0FG7Z6VDP
+                  - img [ref=e1803]
+                  - generic [ref=e1804]:
+                    - generic [ref=e1806]: 20% off Limited time deal
+                    - generic [ref=e1807]:
+                      - generic [ref=e1808]:
+                        - generic [ref=e1809]: $23.99
+                        - generic [ref=e1810]:
+                          - text: $
+                          - generic [ref=e1811]: "23"
+                          - text: "99"
+                      - generic [ref=e1812]:
+                        - generic [ref=e1813]: "List:"
+                        - generic [ref=e1814]:
+                          - generic [ref=e1815]: $29.99
+                          - text: $29.99
+              - listitem [ref=e1816]:
+                - link [ref=e1819]:
+                  - /url: /Joycover-Costume-Onesie-Halloween-Costumes/dp/B0CYQ1F959?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0CYQ1F959&ref_=pd_hp_d_r_btf_unk_B0CYQ1F959
+                  - img [ref=e1821]
+                  - generic [ref=e1822]:
+                    - generic [ref=e1824]: 10% off Limited time deal
+                    - generic [ref=e1825]:
+                      - generic [ref=e1826]:
+                        - generic [ref=e1827]: $26.99
+                        - generic [ref=e1828]:
+                          - text: $
+                          - generic [ref=e1829]: "26"
+                          - text: "99"
+                      - generic [ref=e1830]:
+                        - generic [ref=e1831]: "List:"
+                        - generic [ref=e1832]:
+                          - generic [ref=e1833]: $29.99
+                          - text: $29.99
+              - listitem [ref=e1834]:
+                - link [ref=e1837]:
+                  - /url: /GIFTINBOX-Costume-Halloween-Animal-Costumes/dp/B0F4WB2RMP?pd_rd_w=94M8T&content-id=amzn1.sym.3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_p=3f4a1a5e-5aea-48a2-b92b-2327d3df30d7&pf_rd_r=BN1R1QGAHC3V8A4H1942&pd_rd_wg=Sfzna&pd_rd_r=0f41b8ac-09f0-4515-a6e1-ab167a37aef5&pd_rd_i=B0F4WB2RMP&ref_=pd_hp_d_r_btf_unk_B0F4WB2RMP
+                  - img [ref=e1839]
+                  - generic [ref=e1840]:
+                    - generic [ref=e1842]: 17% off Limited time deal
+                    - generic [ref=e1843]:
+                      - generic [ref=e1844]:
+                        - generic [ref=e1845]: $28.99
+                        - generic [ref=e1846]:
+                          - text: $
+                          - generic [ref=e1847]: "28"
+                          - text: "99"
+                      - generic [ref=e1848]:
+                        - generic [ref=e1849]: "List:"
+                        - generic [ref=e1850]:
+                          - generic [ref=e1851]: $34.99
+                          - text: $34.99
+    - generic [ref=e1852]:
+      - button [ref=e1853] [cursor=pointer]:
+        - generic [ref=e1854]: Back to top
+      - generic [ref=e1855]:
+        - generic [ref=e1856]:
+          - heading [level=6] [ref=e1857]: Get to Know Us
+          - list [ref=e1858]:
+            - listitem [ref=e1859]:
+              - link [ref=e1860]:
+                - /url: https://www.amazon.jobs
+                - text: Careers
+            - listitem [ref=e1861]:
+              - link [ref=e1862]:
+                - /url: https://www.aboutamazon.com/subscribe?utm_source=amazon_com&utm_medium=amazonfooter&utm_campaign=newslettersubscribers&utm_term=amazonnewssignup
+                - text: Amazon Newsletter
+            - listitem [ref=e1863]:
+              - link [ref=e1864]:
+                - /url: https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer&token=about
+                - text: About Amazon
+            - listitem [ref=e1865]:
+              - link [ref=e1866]:
+                - /url: https://www.amazon.com/b?node=15701038011&ie=UTF8
+                - text: Accessibility
+            - listitem [ref=e1867]:
+              - link [ref=e1868]:
+                - /url: https://sustainability.aboutamazon.com/?utm_source=gateway&utm_medium=footer&ref_=susty_footer
+                - text: Sustainability
+            - listitem [ref=e1869]:
+              - link [ref=e1870]:
+                - /url: https://www.amazon.com/pr
+                - text: Press Center
+            - listitem [ref=e1871]:
+              - link [ref=e1872]:
+                - /url: https://www.amazon.com/ir
+                - text: Investor Relations
+            - listitem [ref=e1873]:
+              - link [ref=e1874]:
+                - /url: /gp/browse.html?node=2102313011&ref_=footer_devices
+                - text: Amazon Devices
+            - listitem [ref=e1875]:
+              - link [ref=e1876]:
+                - /url: https://www.amazon.science
+                - text: Amazon Science
+        - generic [ref=e1878]:
+          - heading [level=6] [ref=e1879]: Make Money with Us
+          - list [ref=e1880]:
+            - listitem [ref=e1881]:
+              - link [ref=e1882]:
+                - /url: https://sell.amazon.com/?ld=AZFSSOA_FTSELL-C&ref_=footer_soa
+                - text: Sell on Amazon
+            - listitem [ref=e1883]:
+              - link [ref=e1884]:
+                - /url: https://developer.amazon.com
+                - text: Sell apps on Amazon
+            - listitem [ref=e1885]:
+              - link [ref=e1886]:
+                - /url: https://supply.amazon.com
+                - text: Supply to Amazon
+            - listitem [ref=e1887]:
+              - link [ref=e1888]:
+                - /url: https://sell.amazon.com/brand-registry?ld=AZUSSOA_ABR-FT
+                - text: Protect & Build Your Brand
+            - listitem [ref=e1889]:
+              - link [ref=e1890]:
+                - /url: https://affiliate-program.amazon.com/
+                - text: Become an Affiliate
+            - listitem [ref=e1891]:
+              - link [ref=e1892]:
+                - /url: https://dspjobhub.com/
+                - text: Become a Delivery Driver
+            - listitem [ref=e1893]:
+              - link [ref=e1894]:
+                - /url: https://logistics.amazon.com/marketing?utm_source=amzn&utm_medium=footer&utm_campaign=home
+                - text: Start a Package Delivery Business
+            - listitem [ref=e1895]:
+              - link [ref=e1896]:
+                - /url: https://advertising.amazon.com/?ref=ext_amzn_ftr
+                - text: Advertise Your Products
+            - listitem [ref=e1897]:
+              - link [ref=e1898]:
+                - /url: /gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&topic=200260520&ref_=footer_publishing
+                - text: Self-Publish with Us
+            - listitem [ref=e1899]:
+              - link [ref=e1900]:
+                - /url: https://www.amazon.com/b?node=216188543011
+                - text: Become an Amazon Hub Partner
+            - listitem [ref=e1901]:
+              - text: ›
+              - link [ref=e1902]:
+                - /url: /b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore
+                - text: See More Ways to Make Money
+        - generic [ref=e1904]:
+          - heading [level=6] [ref=e1905]: Amazon Payment Products
+          - list [ref=e1906]:
+            - listitem [ref=e1907]:
+              - link [ref=e1908]:
+                - /url: /iss/credit/rewardscardmember?plattr=CBFOOT&ref_=footer_cbcc
+                - text: Amazon Visa
+            - listitem [ref=e1909]:
+              - link [ref=e1910]:
+                - /url: /credit/storecard/member?plattr=PLCCFOOT&ref_=footer_plcc
+                - text: Amazon Store Card
+            - listitem [ref=e1911]:
+              - link [ref=e1912]:
+                - /url: /dp/product/B084KP3NG6?plattr=SCFOOT&ref_=footer_ACB
+                - text: Amazon Secured Card
+            - listitem [ref=e1913]:
+              - link [ref=e1914]:
+                - /url: /dp/B0DVBL912R?plattr=ACOMFO&ie=UTF-8
+                - text: Amazon Business Card
+            - listitem [ref=e1915]:
+              - link [ref=e1916]:
+                - /url: https://www.amazon.com/hp/shopwithpoints/servicing
+                - text: Shop with Points
+            - listitem [ref=e1917]:
+              - link [ref=e1918]:
+                - /url: /gp/browse.html?node=3561432011&ref_=footer_ccmp
+                - text: Credit Card Marketplace
+            - listitem [ref=e1919]:
+              - link [ref=e1920]:
+                - /url: /gp/browse.html?node=10232440011&ref_=footer_reload_us
+                - text: Reload Your Balance
+            - listitem [ref=e1921]:
+              - link [ref=e1922]:
+                - /url: https://www.amazon.com/b/?node=2238192011&ref=shop_footer_payments_gc_desktop
+                - text: Gift Cards
+            - listitem [ref=e1923]:
+              - link [ref=e1924]:
+                - /url: /gp/browse.html?node=388305011&ref_=footer_tfx
+                - text: Amazon Currency Converter
+        - generic [ref=e1926]:
+          - heading [level=6] [ref=e1927]: Let Us Help You
+          - list [ref=e1928]:
+            - listitem [ref=e1929]:
+              - link [ref=e1930]:
+                - /url: https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya
+                - text: Your Account
+            - listitem [ref=e1931]:
+              - link [ref=e1932]:
+                - /url: https://www.amazon.com/gp/css/order-history?ref_=footer_yo
+                - text: Your Orders
+            - listitem [ref=e1933]:
+              - link [ref=e1934]:
+                - /url: /hz/contact-us/foresight/hubgateway?ref_=footer_gw_m_b_he
+                - text: Customer Service
+            - listitem [ref=e1935]:
+              - link [ref=e1936]:
+                - /url: /gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates
+                - text: Shipping Rates & Policies
+            - listitem [ref=e1937]:
+              - link [ref=e1938]:
+                - /url: /gp/prime?ref_=footer_prime
+                - text: Amazon Prime
+            - listitem [ref=e1939]:
+              - link [ref=e1940]:
+                - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+                - text: Returns & Replacements
+            - listitem [ref=e1941]:
+              - link [ref=e1942]:
+                - /url: /hz/mycd/myx?ref_=footer_myk
+                - text: Manage Your Content and Devices
+            - listitem [ref=e1943]:
+              - link [ref=e1944]:
+                - /url: https://www.amazon.com/product-safety-alerts?ref_=footer_bsx_ypsa
+                - text: Recalls and Product Safety Alerts
+            - listitem [ref=e1945]:
+              - link [ref=e1946]:
+                - /url: /registries?ref_=nav_footer_registry_giftlist_desktop
+                - text: Registry & Gift List
+      - generic [ref=e1948]:
+        - link [ref=e1951]:
+          - /url: /?ref_=footer_logo
+        - generic [ref=e1954]:
+          - generic [ref=e1955]:
+            - link [ref=e1956]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+              - generic [ref=e1958]: English
+            - button [ref=e1959] [cursor=pointer]
+          - button [ref=e1960]:
+            - generic [ref=e1962]: United States
+      - navigation [ref=e1963]:
+        - generic [ref=e1964]:
+          - list [ref=e1965]:
+            - listitem [ref=e1966]:
+              - link [ref=e1967]:
+                - /url: https://music.amazon.com?ref=dm_aff_amz_com
+                - heading [level=5] [ref=e1968]: Amazon Music
+                - generic [ref=e1969]: Stream millions of songs
+            - listitem [ref=e1970]
+            - listitem [ref=e1971]:
+              - link [ref=e1972]:
+                - /url: https://advertising.amazon.com/?ref=footer_advtsing_amzn_com
+                - heading [level=5] [ref=e1973]: Amazon Ads
+                - generic [ref=e1974]: Reach customers wherever they spend their time
+            - listitem [ref=e1975]
+            - listitem [ref=e1976]:
+              - link [ref=e1977]:
+                - /url: https://www.6pm.com
+                - heading [level=5] [ref=e1978]: 6pm
+                - generic [ref=e1979]: Score deals on fashion brands
+            - listitem [ref=e1980]
+            - listitem [ref=e1981]:
+              - link [ref=e1982]:
+                - /url: https://www.abebooks.com
+                - heading [level=5] [ref=e1983]: AbeBooks
+                - generic [ref=e1984]: Books, art & collectibles
+            - listitem [ref=e1985]
+            - listitem [ref=e1986]:
+              - link [ref=e1987]:
+                - /url: https://www.acx.com/
+                - heading [level=5] [ref=e1988]: ACX
+                - generic [ref=e1989]: Audiobook Publishing Made Easy
+            - listitem [ref=e1990]
+            - listitem [ref=e1991]:
+              - link [ref=e1992]:
+                - /url: https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell
+                - heading [level=5] [ref=e1993]: Sell on Amazon
+                - generic [ref=e1994]: Start a Selling Account
+            - listitem [ref=e1995]
+            - listitem [ref=e1996]:
+              - link [ref=e1997]:
+                - /url: https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer
+                - heading [level=5] [ref=e1998]: Veeqo
+                - generic [ref=e1999]: Shipping Software Inventory Management
+          - list [ref=e2000]:
+            - listitem [ref=e2001]:
+              - link [ref=e2002]:
+                - /url: /business?ref_=footer_retail_b2b
+                - heading [level=5] [ref=e2003]: Amazon Business
+                - generic [ref=e2004]: Everything For Your Business
+            - listitem [ref=e2005]
+            - listitem [ref=e2006]:
+              - link [ref=e2007]:
+                - /url: /fmc/grocery-gateway?almBrandId=fe16aGPfFs46S&ref_=footer_groceries
+                - heading [level=5] [ref=e2008]: Groceries at Amazon
+                - generic [ref=e2009]: Groceries & More Right To Your Door
+            - listitem [ref=e2010]
+            - listitem [ref=e2011]:
+              - link [ref=e2012]:
+                - /url: /gp/browse.html?node=20338496011&ref_=footer_amazonglobal
+                - heading [level=5] [ref=e2013]: AmazonGlobal
+                - generic [ref=e2014]: Ship Orders Internationally
+            - listitem [ref=e2015]
+            - listitem [ref=e2016]:
+              - link [ref=e2017]:
+                - /url: /services?ref_=footer_services
+                - heading [level=5] [ref=e2018]: Home Services
+                - generic [ref=e2019]: Experienced Pros Happiness Guarantee
+            - listitem [ref=e2020]
+            - listitem [ref=e2021]:
+              - link [ref=e2022]:
+                - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter
+                - heading [level=5] [ref=e2023]: Amazon Web Services
+                - generic [ref=e2024]: Scalable Cloud Computing Services
+            - listitem [ref=e2025]
+            - listitem [ref=e2026]:
+              - link [ref=e2027]:
+                - /url: https://www.audible.com
+                - heading [level=5] [ref=e2028]: Audible
+                - generic [ref=e2029]: Listen to Books & Original Audio Performances
+            - listitem [ref=e2030]
+            - listitem [ref=e2031]:
+              - link [ref=e2032]:
+                - /url: https://www.boxofficemojo.com/?ref_=amzn_nav_ftr
+                - heading [level=5] [ref=e2033]: Box Office Mojo
+                - generic [ref=e2034]: Find Movie Box Office Data
+          - list [ref=e2035]:
+            - listitem [ref=e2036]:
+              - link [ref=e2037]:
+                - /url: https://www.goodreads.com
+                - heading [level=5] [ref=e2038]: Goodreads
+                - generic [ref=e2039]: Book reviews & recommendations
+            - listitem [ref=e2040]
+            - listitem [ref=e2041]:
+              - link [ref=e2042]:
+                - /url: https://www.imdb.com
+                - heading [level=5] [ref=e2043]: IMDb
+                - generic [ref=e2044]: Movies, TV & Celebrities
+            - listitem [ref=e2045]
+            - listitem [ref=e2046]:
+              - link [ref=e2047]:
+                - /url: https://pro.imdb.com?ref_=amzn_nav_ftr
+                - heading [level=5] [ref=e2048]: IMDbPro
+                - generic [ref=e2049]: Get Info Entertainment Professionals Need
+            - listitem [ref=e2050]
+            - listitem [ref=e2051]:
+              - link [ref=e2052]:
+                - /url: https://kdp.amazon.com
+                - heading [level=5] [ref=e2053]: Kindle Direct Publishing
+                - generic [ref=e2054]: Indie Digital & Print Publishing Made Easy
+            - listitem [ref=e2055]
+            - listitem [ref=e2056]:
+              - link [ref=e2057]:
+                - /url: /gp/browse.html?node=13234696011&ref_=_gno_p_foot
+                - heading [level=5] [ref=e2058]: Amazon Photos
+                - generic [ref=e2059]: Unlimited Photo Storage Free With Prime
+            - listitem [ref=e2060]
+            - listitem [ref=e2061]:
+              - link [ref=e2062]:
+                - /url: https://videodirect.amazon.com/home/landing
+                - heading [level=5] [ref=e2063]: Prime Video Direct
+                - generic [ref=e2064]: Video Distribution Made Easy
+            - listitem [ref=e2065]
+            - listitem [ref=e2066]:
+              - link [ref=e2067]:
+                - /url: https://www.shopbop.com
+                - heading [level=5] [ref=e2068]: Shopbop
+                - generic [ref=e2069]: Designer Fashion Brands
+          - list [ref=e2070]:
+            - listitem [ref=e2071]:
+              - link [ref=e2072]:
+                - /url: /gp/browse.html?node=10158976011&ref_=footer_wrhsdls
+                - heading [level=5] [ref=e2073]: Amazon Resale
+                - generic [ref=e2074]: Great Deals on Quality Used Products
+            - listitem [ref=e2075]
+            - listitem [ref=e2076]:
+              - link [ref=e2077]:
+                - /url: https://www.wholefoodsmarket.com
+                - heading [level=5] [ref=e2078]: Whole Foods Market
+                - generic [ref=e2079]: America’s Healthiest Grocery Store
+            - listitem [ref=e2080]
+            - listitem [ref=e2081]:
+              - link [ref=e2082]:
+                - /url: https://www.woot.com/
+                - heading [level=5] [ref=e2083]: Woot!
+                - generic [ref=e2084]: Deals and Shenanigans
+            - listitem [ref=e2085]
+            - listitem [ref=e2086]:
+              - link [ref=e2087]:
+                - /url: https://www.zappos.com
+                - heading [level=5] [ref=e2088]: Zappos
+                - generic [ref=e2089]: Shoes & Clothing
+            - listitem [ref=e2090]
+            - listitem [ref=e2091]:
+              - link [ref=e2092]:
+                - /url: https://ring.com
+                - heading [level=5] [ref=e2093]: Ring
+                - generic [ref=e2094]: Smart Home Security Systems
+            - listitem [ref=e2095]
+            - listitem [ref=e2096]:
+              - link [ref=e2097]:
+                - /url: https://eero.com/
+                - heading [level=5] [ref=e2098]: eero WiFi
+                - generic [ref=e2099]: Stream 4K Video in Every Room
+            - listitem [ref=e2100]
+            - listitem [ref=e2101]:
+              - link [ref=e2102]:
+                - /url: https://blinkforhome.com/?ref=nav_footer
+                - heading [level=5] [ref=e2103]: Blink
+                - generic [ref=e2104]: Smart Security for Every Home
+          - list [ref=e2105]:
+            - listitem [ref=e2106]
+            - listitem [ref=e2107]
+            - listitem [ref=e2108]:
+              - link [ref=e2109]:
+                - /url: https://shop.ring.com/pages/neighbors-app
+                - heading [level=5] [ref=e2110]: Neighbors App
+                - generic [ref=e2111]: Real-Time Crime & Safety Alerts
+            - listitem [ref=e2112]
+            - listitem [ref=e2113]:
+              - link [ref=e2114]:
+                - /url: https://www.pillpack.com
+                - heading [level=5] [ref=e2115]: PillPack
+                - generic [ref=e2116]: Pharmacy Simplified
+            - listitem [ref=e2117]
+            - listitem [ref=e2118]:
+              - link [ref=e2119]:
+                - /url: /gp/browse.html?node=12653393011&ref_=footer_usrenew
+                - heading [level=5] [ref=e2120]: Amazon Renewed
+                - generic [ref=e2121]: Refurbished tech you can trust
+            - listitem [ref=e2122]
+            - listitem [ref=e2123]:
+              - link [ref=e2124]:
+                - /url: https://www.amazon.com/luna/landing-page?ref_=tmp_retail_footer
+                - heading [level=5] [ref=e2125]: Amazon Luna
+                - generic [ref=e2126]: Video games from the cloud, no console required
+            - listitem [ref=e2127]
+            - listitem [ref=e2128]
+            - listitem [ref=e2129]
+            - listitem [ref=e2130]
+      - generic [ref=e2131]:
+        - list [ref=e2132]:
+          - listitem [ref=e2133]:
+            - link [ref=e2134]:
+              - /url: /gp/help/customer/display.html?nodeId=508088&ref_=footer_cou
+              - text: Conditions of Use
+          - listitem [ref=e2135]:
+            - link [ref=e2136]:
+              - /url: /gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ&ref_=footer_privacy
+              - text: Privacy Notice
+          - listitem [ref=e2137]:
+            - link [ref=e2138]:
+              - /url: /gp/help/customer/display.html?ie=UTF8&nodeId=TnACMrGVghHocjL8KB&ref_=footer_consumer_health_data_privacy
+              - text: Consumer Health Data Privacy Disclosure
+          - listitem [ref=e2139]:
+            - link [ref=e2140]:
+              - /url: /privacyprefs?ref_=footer_iba
+              - text: Your Ads Privacy Choices
+          - listitem [ref=e2141]
+        - generic [ref=e2143]: © 1996-2026, Amazon.com, Inc. or its affiliates
+    - iframe [ref=e2145]:
+      
+  - dialog [ref=e2148]:
+    - generic [ref=e2149]: Browse all categories
+    - button "Close menu" [ref=e2150] [cursor=pointer]
+    - link "Hello, Bini" [ref=e2151]:
+      - /url: javascript:void(0)
+      - generic [ref=e2156]: Hello, Bini
+    - generic [ref=e2158]:
+      - button "Back to main menu" [active] [ref=e2159]:
+        - generic [ref=e2160]: main menu
+      - region [ref=e2162]:
+        - heading "Clothing, Shoes, Jewelry & Watches" [level=2] [ref=e2163]
+        - list [ref=e2164]:
+          - listitem [ref=e2165]:
+            - link "Amazon Fashion" [ref=e2166]:
+              - /url: /gp/browse.html?node=7141123011&ref_=nav_em__sft_0_2_12_2
+          - listitem [ref=e2167]:
+            - link "Women" [ref=e2168]:
+              - /url: /gp/browse.html?node=7147440011&ref_=nav_em__sft_women_0_2_12_3
+          - listitem [ref=e2169]:
+            - link "Men" [ref=e2170]:
+              - /url: /gp/browse.html?node=7147441011&ref_=nav_em__sft_men_0_2_12_4
+          - listitem [ref=e2171]:
+            - link "Girls" [ref=e2172]:
+              - /url: /gp/browse.html?node=7147442011&ref_=nav_em__sft_girls_0_2_12_5
+          - listitem [ref=e2173]:
+            - link "Boys" [ref=e2174]:
+              - /url: /gp/browse.html?node=7147443011&ref_=nav_em__sft_boys_0_2_12_6
+          - listitem [ref=e2175]:
+            - link "Baby" [ref=e2176] [cursor=pointer]:
+              - /url: /gp/browse.html?node=7147444011&ref_=nav_em__sft_baby_0_2_12_7
+          - listitem [ref=e2177]:
+            - link "Travel" [ref=e2178]:
+              - /url: /gp/browse.html?node=214329668011&ref_=nav_em__sft_ts_0_2_12_8
+          - listitem [ref=e2179]:
+            - link "Amazon Luxury" [ref=e2180]:
+              - /url: /luxurystores?ref_=nav_em_luxury_sbd_hamb_0_2_12_9
+          - listitem [ref=e2181]:
+            - link "Sales & Deals" [ref=e2182]:
+              - /url: /gp/browse.html?node=9538491011&ref_=nav_em__sft_sales_0_2_12_10
+          - region [ref=e2184]:
+            - heading "More to Explore" [level=2] [ref=e2185]
+            - list [ref=e2186]:
+              - listitem [ref=e2187]:
+                - link "Our Brands" [ref=e2188]:
+                  - /url: /gp/browse.html?node=16334314011&ref_=nav_em__OurBrands_0_2_12_12
+              - listitem [ref=e2189]:
+                - link "The Shop by Shopbop" [ref=e2190]:
+                  - /url: /stores/page/135F2992-CF34-468F-B67F-101F73A197E3?ref_=nav_em__shopbop_0_2_12_13
+              - listitem [ref=e2191]:
+                - link "Artist Merch Shop" [ref=e2192]:
+                  - /url: /gp/browse.html?node=21213464011&ref_=nav_em__ammerch_fash_0_2_12_14
+              - listitem [ref=e2193]:
+                - link "Merch on Demand" [ref=e2194]:
+                  - /url: /gp/browse.html?node=21393915011&ref_=nav_em__merch_demand_dsk_0_2_12_15
+    - link [ref=e2195]:
+      - /url: javascript:void(0)
+      - generic [ref=e2196]: Back to top
+  - generic: "Test: amzn-nv-flyout-healthy-choice"
+  - generic: "Test: nav-rufus-disc-txt"
+  - generic: "Test: a-truncate-cut"
+  - generic: "Test: sp-cc-wrapper"
+  - generic: "Test: .mo-wp"
+  - generic: "Test: .a-image-container"
+  - generic: "Test: sp-cc"
+  - generic: "Test: .amzn-box-inner"
+  - generic: "Test: .js-order-card"
+  - generic: "Test: pldn-deep-link"
+  - generic: "Test: add-to-cart-btn"
+  - generic: "Test: amzn-nav-app-banner-container"
+  - generic: "Test: .sparkle-container"
+```
+
+# Test source
+
+```ts
+  1  | const { test, expect } = require('@playwright/test');
+  2  | 
+  3  | test.use({
+  4  |     storageState: 'playwright/.auth/amazon.json'
+  5  | });
+  6  | 
+  7  | test('Amazon account page', async ({ page }) => {
+  8  | 
+  9  |     await page.goto('https://www.amazon.com/');
+  10 |     await page.locator('.hm-icon').click();
+  11 |     await page.getByText("Clothing, Shoes, Jewelry & Watches").click();
+> 12 |     await page.locator("li .hmenu-item").nth(1).click();
+     |                                                 ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  13 |     await page.getByText("Dresses").click();
+  14 |     await page.locator(".a-section").click();
+  15 |     console.log(await page.title());
+  16 |     await page.pause();
+  17 | 
+  18 |     //await expect(page).toHaveTitle(/Amazon/i);
+  19 | 
+  20 |     // Your test starts here.
+  21 |     // No username/password/OTP required.
+  22 | 
+  23 | });
+```

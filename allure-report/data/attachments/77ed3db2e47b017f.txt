@@ -1,0 +1,6 @@
+Please email us at mentor@rahulshettyacademy.com with below template to receive response 
+[
+  'Please email us at mentor',
+  'rahulshettyacademy.com with below template to receive response '
+]
+rahulshettyacademy.com
